@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_black_9_corner_10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <life.forever.cf.publics.weight.LoadingView
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:lineSpacingExtra="3dp"
+            android:maxLines="1"
+            android:text="@string/pay_upload"
+            android:textColor="@android:color/white"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+</FrameLayout>

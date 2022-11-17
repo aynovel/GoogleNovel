@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="life.forever.cf"
+    tools:ignore="ProtectedPermissions">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <!--<uses-permission android:name="android.permission.SEND_SMS" />-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="${applicationId}.permission.JPUSH_MESSAGE" />
+    <uses-permission android:name="android.permission.RECEIVE_USER_PRESENT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- Android8.0允许未知来源应用安装的权限 -->
+<!--    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />-->
+
+    <application
+        android:name="life.forever.cf.activtiy.PlotRead"
+        android:allowBackup="false"
+        android:icon="@drawable/logo_novel_star"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:supportsRtl="true"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/TranslucentTheme"
+        tools:ignore="AllowBackup,Instantiatable,LockedOrientationActivity,MissingClass"
+        tools:replace="android:allowBackup,android:supportsRtl,android:label">
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="${UMENG_CHANNEL_VALUE}" />
+
+        <activity
+            android:name=".activtiy.SplashActivity"
+            android:configChanges="orientation|screenSize"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="novelstar.top"
+                    android:scheme="novelstar" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+
+            </intent-filter>
+
+        </activity>
+
+        <activity
+            android:name=".activtiy.HomeActivity"
+            android:launchMode="singleTask"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data
+                    android:host="novelstar.top"
+                    android:scheme="novelstarin" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activtiy.TopUpActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".activtiy.BillDetailsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.WalletActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.BillActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.ChapterUnlockActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.ReadHistoryActivity"
+            android:screenOrientation="portrait" />
+
+        <!--        <activity-->
+        <!--            android:name=".ranking.RankingListFragment"-->
+        <!--            android:screenOrientation="portrait" />-->
+
+
+        <activity
+            android:name=".adapter.person.readinglevel.SignAndWelfareActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.readinglevel.SignRuleActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.readingtask.TaskDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.WorkDetailActivity"
+            android:screenOrientation="portrait"></activity>
+
+        <activity
+            android:name=".adapter.DiscoverMoreActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.MessageDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.LibraryActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".activtiy.CatalogActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.FansListActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name=".adapter.person.personcenter.ReportActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.FansRuleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.WorkCommentListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.WorkCommentDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.landing.LoginActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".adapter.person.landing.PrivatePolicyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.landing.ServiceTermsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.ReadPreferenceSettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.NewReadEndActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.SettingActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.readingmsg.MessageActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".adapter.person.readingmsg.SystemMessageDetailActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.CommentReportActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.PublishWorkCommentActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.UserWorkCommentListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.AutoBuyManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.PushUpdateManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.ManagerActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.AboutUsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.AccountActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.RechargeRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.ConsumeRecordActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.VoucherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.VoucherHelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.OverdueVoucherActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.account.VoucherExchangeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.UserInfoModifyActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.SearchActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".BoyiWebActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".publics.Hil"
+            android:screenOrientation="portrait" />
+<!--        <activity-->
+<!--            android:name=".ireader.ui.activity.ReadActivity"-->
+<!--            android:screenOrientation="portrait"-->
+<!--            android:exported="true"/>-->
+
+        <activity
+            android:name=".adapter.person.readinglevel.LevelRuleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.ActivityRuleActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.vip.MonthVipActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.vip.MonthVipRechargeActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.UserHelpActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.UserHelpDetailsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.FeedbackActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".adapter.person.personcenter.JoinUsActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activtiy.ClassifyDetailActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+
+        <activity android:name=".activtiy.TaskCenterActivity"
+            android:screenOrientation="portrait" />
+
+
+        <!-- 新阅读页面 -->
+
+        <activity
+            android:name=".activtiy.ReadActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"/>
+
+        <!-- ********* -->
+
+
+        <!-- 相机-->
+
+        <activity
+            android:name=".activtiy.ISListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+
+        <activity
+            android:name=".activtiy.ISCameraActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="DuplicateActivity" />
+
+
+<!--        <meta-data-->
+<!--            android:name=".publics.picture.KillALB"-->
+<!--            android:value="GlideModule" />-->
+
+<!--        <meta-data-->
+<!--            android:name=".publics.picture.KillALB"-->
+<!--            android:value="Download"></meta-data>-->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:scheme="@string/fb_login_protocol_scheme"
+                    tools:ignore="ManifestResource" />
+            </intent-filter>
+        </activity>
+
+
+        <service android:name=".service.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_novel_star" />
+        <!-- Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more. -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/color_000000" />
+
+
+        <provider
+            android:name="com.facebook.FacebookContentProvider"
+            android:authorities="com.facebook.app.FacebookContentProvider3106385111"
+            android:exported="true" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true"
+            tools:replace="android:authorities">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--openset-->
+        <provider
+            android:name="com.kc.openset.util.OSETFileProvider"
+            android:authorities="${applicationId}.osetfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+                        <meta-data
+                            android:name="android.support.FILE_PROVIDER_PATHS"
+                            android:resource="@xml/oset_filepath" />
+        </provider>
+
+        <!--opendsp-->
+        <provider
+            android:name="com.od.util.ODFileProvider"
+            android:authorities="${applicationId}.odfileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+        <activity android:name="com.od.reward.ODRewardVideoActivity" />
+        <!--穿山甲-->
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.multipro.TTMultiProvider"
+            android:authorities="${applicationId}.TTMultiProvider"
+            android:exported="false" />
+        <provider
+            android:name="com.bytedance.sdk.openadsdk.TTFileProvider"
+            android:authorities="${applicationId}.TTFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!--广点通-->
+        <!-- 声明SDK所需要的组件 -->
+        <!--配置provider-->
+        <provider
+            android:name="com.qq.e.comm.GDTFileProvider"
+            android:authorities="${applicationId}.gdt.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/filepaths" />
+        </provider>
+
+        <!--        &lt;!&ndash;sigmob&ndash;&gt;-->
+        <provider
+            android:name="com.sigmob.sdk.SigmobFileProvider"
+            android:authorities="${applicationId}.sigprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <!--            <meta-data-->
+            <!--                android:name="android.support.FILE_PROVIDER_PATHS"-->
+            <!--                android:resource="@xml/sigmob_provider_paths" />-->
+        </provider>
+
+        <meta-data
+            android:name="com.huawei.hms.client.channel.androidMarket"
+            android:value="false" />
+    </application>
+    <queries>
+        <intent>
+            <action android:name="com.huawei.hms.core.aidlservice" />
+        </intent>
+    </queries>
+
+</manifest>

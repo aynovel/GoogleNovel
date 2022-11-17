@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <life.forever.cf.publics.weight.WrapListView
+        android:id="@+id/listView"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_white_corner_15dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/gray_3_color"
+        android:dividerHeight="1dp"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_corner_15dp"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="@string/aiye_cancel"
+        android:textColor="@color/theme_color"
+        android:textSize="16sp" />
+
+</LinearLayout>

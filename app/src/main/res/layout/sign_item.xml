@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/layout_sign"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_sign"
+        android:orientation="horizontal"
+        tools:ignore="MissingConstraints,UseCompoundDrawables,UselessParent">
+
+        <LinearLayout
+            android:layout_width="58dp"
+            android:layout_height="64dp"
+            android:orientation="vertical"
+            tools:ignore="UselessParent,UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/color_000001"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/img_coins"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:src="@drawable/icon_task_bonus"
+                tools:ignore="ContentDescription" />
+
+            <TextView
+                android:id="@+id/tv_coins"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="@color/color_656667"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="UselessParent,UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/img_gife"
+            android:layout_width="64dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:src="@drawable/icon_sign_gift_bag"
+            tools:ignore="ContentDescription" />
+        </FrameLayout>
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/img_signed_in"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@drawable/icon_signed_in"
+        android:layout_toEndOf="@+id/layout_sign"
+        android:layout_alignTop="@+id/layout_sign"
+        android:layout_marginStart="-10dp"
+        android:visibility="gone"
+        tools:ignore="ContentDescription,MissingConstraints" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:layout_below="@+id/layout_sign"
+        tools:ignore="MissingConstraints" />
+</RelativeLayout>

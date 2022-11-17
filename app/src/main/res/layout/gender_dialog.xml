@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gender_dialog_circle"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/tv_male"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Male"
+        android:textColor="@color/discover_name"
+        android:textSize="15sp" />
+
+    <View style="@style/common_horizontal_line" />
+
+    <TextView
+        android:id="@+id/tv_female"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Female"
+        android:textColor="@color/discover_name"
+        android:textSize="15sp" />
+
+    <View style="@style/common_horizontal_line" />
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/theme_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

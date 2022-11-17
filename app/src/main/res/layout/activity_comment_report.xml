@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <life.forever.cf.publics.weight.WrapListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/other"
+                android:textColor="@color/dark_2_color"
+                android:textSize="14sp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/shape_white_corner_5dp_gray_border">
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_margin="15dp"
+                    android:background="@null"
+                    android:gravity="top"
+                    android:hint="@string/please_enter_feedback"
+                    android:lineSpacingExtra="5dp"
+                    android:textColor="@color/dark_3_color"
+                    android:textColorHint="@color/gray_1_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/wordCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|right"
+                    android:layout_margin="10dp"
+                    android:text="@string/three_thousand"
+                    android:textColor="@color/gray_1_color"
+                    android:textSize="14sp" />
+
+            </FrameLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/theme_color"
+        android:gravity="center"
+        android:text="@string/aiye_submit"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

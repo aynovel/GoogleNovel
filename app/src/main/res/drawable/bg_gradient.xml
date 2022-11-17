@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--实现应用背景颜色渐变-->
+    <gradient
+        android:centerColor="#00000000"
+        android:endColor="#CC000000"
+        android:angle="270"/>
+    <!-- 设置按钮的四个角为弧形 -->
+    <corners android:radius="4dp" />
+</shape>

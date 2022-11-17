@@ -1,0 +1,723 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+
+    <string name="app_name">OReader</string>
+
+    <string name="pull_to_refresh">Swipe down</string>
+    <string name="loosen_to_refresh">Release to load more data immediately</string>
+    <string name="loading_refresh">Refreshing!</string>
+    <string name="refresh_complete">Swip me up!</string>
+
+    <string name="permission_to_illustrate"> %s  Giải thích quyền hạn</string>
+    <string name="phone_permission">Quyền hạn điện thoại</string>
+    <string name="imei_permission">Kiểm tra mã IMEI của thiết bị để đảm bảo an toàn cho tài khoản và ngăn chặn hành vi trộm cắp tài khoản.</string>
+    <string name="storage_space_permissions">Quyền lưu trữ</string>
+    <string name="down_text">Tải xuống các tập tin sách để giảm tiêu thụ dung lượng</string>
+    <string name="find_version">New Version Available V%s</string>
+
+    <string name="why_need">Tại sao bạn cần nó %s？</string>
+
+    <string name="login_bottom_hint">If you tapping continue, you agree to the</string>
+
+    <string name="EMAIL_URL">liying.liang01@boetech.cn</string>
+
+    <string name="aiye_exit_tip">Press again to exit %s</string>
+    <string name="aiye_select_all">Select All</string>
+    <string name="aiye_cancel_select_all">Deselect All</string>
+    <string name="aiye_clear">Xóa sạch</string>
+    <string name="aiye_delete">Xóa</string>
+    <string name="aiye_setting">Settings</string>
+    <string name="aiye_complete">Cancel</string>
+    <string name="aiye_cancel">Hủy bỏ</string>
+    <string name="aiye_add_to_shelf">Add to the Library?</string>
+    <string name="aiye_check_now">Xem ngay</string>
+    <string name="aiye_receive_now">Nhận ngay</string>
+    <string name="aiye_reject">Không</string>
+    <string name="aiye_screening">Lựa chọn</string>
+    <string name="aiye_reset">Cài đặt lại</string>
+    <string name="aiye_submit">Gửi</string>
+    <string name="aiye_classify">Thể loại</string>
+    <string name="aiye_login">Nama Pengguna</string>
+    <string name="aiye_facebook">Continue with Facebook</string>
+    <string name="aiye_google">Continue with Google</string>
+    <string name="aiye_search">Tìm</string>
+    <string name="aiye_send_out">thưởng</string>
+    <string name="aiye_jump">Skip</string>
+
+    <string name="aiye_read_continue_ask">Chương《%s》, bạn có muốn đi đọc không?</string>
+    <string name="aiye_read_continue">CONTINUE READING</string>
+
+    <string name="home_activity_book_shelf">Library</string>
+    <string name="home_activity_recommend">Discover</string>
+    <string name="home_activity_rank">Genres</string>
+    <string name="home_activity_profile">Writing</string>
+
+    <string name="home_activity_mine">Inbox</string>
+
+    <string name="mine_activity_book_Library">LIBRARY</string>
+    <string name="mine_activity_book_recording">RECORDING</string>
+    <string name="mine_activity_write_on_navelstar">WRITE on NovelStar</string>
+
+    <!--MineWriteFragment-->
+
+    <string name="shelf_manage_pop_list_show">Hiển thị danh sách</string>
+    <string name="shelf_manage_pop_grid_show">Hiển thị đường lưới</string>
+    <string name="shelf_manage_pop_read_history">Reading History</string>
+
+    <string name="shelf_edit_pop_deletes">Delete</string>
+    <string name="shelf_edit_pop_delete">Delete(%d)</string>
+    <string name="shelf_edit_selected">SELECTED(%d)</string>
+
+    <string name="week_recommend_pop_title">Dành cho bạn</string>
+    <string name="week_recommend_pop_sub_title">Hãy thử đọc truyện mới đi~</string>
+    <string name="week_recommend_pop_receive">Thêm vào giá sách</string>
+
+    <string name="ranking_activity_title">Bảng xếp hạng</string>
+    <string name="ranking_activity_week">Danh sách hàng tuần</string>
+    <string name="ranking_activity_day">Danh sách hàng ngày</string>
+    <string name="ranking_activity_month">Danh sách hàng tháng</string>
+    <string name="ranking_activity_total">Danh sách tổng thể</string>
+
+
+    <string name="mine_user_id">UID：%d&#8194;</string>
+    <string name="mine_sign_welfare">Điểm danh &amp; lợi ích</string>
+    <string name="mine_sign_continuous">Điểm danh %d&#8194;ngày liên tiếp</string>
+    <string name="mine_do_task">Làm nhiệm vụ</string>
+
+    <string name="mine_future_sign_days">Bạn có thể nhận được một gói quà tặng lớn nếu bạn kiên trì  %d&#8194;ngày nữa～</string>
+    <string name="mine_user_money">%d&#8194;xu丨%d&#8194;xu tặng</string>
+    <string name="mine_recharge">Nạp tiền</string>
+
+    <string name="mine_user_month_date">Hết hạn：%s</string>
+    <string name="mine_user_month_open">Mở</string>
+    <string name="mine_user_month_continue">Gia hạn</string>
+
+    <string name="mine_share_to_make_money">分享赚钱</string>
+
+    <string name="mine_my_grade">Cấp độ của tôi:</string>
+    <string name="mine_sign_rule">Quy tắc thưởng đăng nhập điểm danh ></string>
+    <string name="mine_sign">Điểm danh </string>
+    <string name="mine_signed">Đã điểm danh </string>
+    <string name="mine_want_do_task">Tôi muốn làm nhiệm vụ</string>
+
+    <string name="task_completed">Completed</string>
+    <string name="task_wait_complete">Sẽ hoàn thành</string>
+    <string name="task_award_description">+%d&#8194;Xu Tặng </string>
+    <string name="task_tip">TIP nhiệm vụ</string>
+    <string name="task_award">Phần thưởng nhiệm vụ</string>
+    <string name="task_award_voucher">%d%s &#8194;</string>
+    <!--    <string name="task_award_experience">%d&#8194;Điểm Kinh nghiệm</string>-->
+    <string name="task_receive_award">Nhận phần thưởng</string>
+
+    <string name="mine_sign_success">Đăng nhập thành công</string>
+
+    <string name="detail_reward">Tip</string>
+    <string name="detail_start_read">START READING</string>
+
+    <string name="fans_value">Giá trị Fans: %d&#8194;</string>
+    <string name="reward_value">Rewarded %d&#8194;coins</string>
+    <string name="comment_total_comment">All comments</string>
+    <string name="comment_bracket_value">（%d&#8194;</string>
+    <string name="comment_null">Nội dung bình luận trống rỗng！</string>
+    <string name="reply_poster">Write comment…</string>
+    <string name="other">Khác</string>
+    <string name="account_recharge_description">%.2f Nạp tiền VNĐ（%s）</string>
+    <string name="account_recharge_value_both">+%d&#8194;xu丨+%d&#8194;Xu Tặng</string>
+    <string name="account_recharge_value_money">+%d&#8194;xu</string>
+    <string name="account_recharge_value_voucher">+%d&#8194;Xu Tặng</string>
+    <string name="voucher_enable_date">Có hiệu lực cho đến khi:%s</string>
+
+    <string name="book_money">&#8194;xu</string>
+    <string name="permission_open">Đi để mở</string>
+    <string name="permission_known">Tôi hiểu rồi</string>
+
+
+    <string name="have_a_book_shortage">Không biết đọc truyện nào? Chán quá? Đi đến với tôi tải xuống </string>
+    <string name="watch_it_with_me">Bạn yêu, tôi đã tìm thấy một truyện thú vị, hãy đến xem với ~</string>
+    <string name="date_task">Nhiệm vụ hàng ngày</string>
+    <string name="new_task">Nhiệm vụ người mới</string>
+    <string name="the_cumulative_task">Nhiệm vụ tích lũy</string>
+
+    <string name="my_news">Tin tức của tôi</string>
+    <string name="reply_me">Trả lời tôi</string>
+
+    <string name="received_praise">Like đã nhận</string>
+    <string name="system_message">Tin tức hệ thống </string>
+    <string name="my_comments">Bình luận của tôi</string>
+
+    <string name="book_purchase">Manage Automatic Purchased</string>
+    <string name="card">Thẻ cào</string>
+    <string name="nganluong">Ngân Lượng</string>
+    <string name="push_settings">Open notification</string>
+
+    <string name="author_joined">作者加入</string>
+    <string name="author_books">Author Books</string>
+    <string name="my_accounts">Tài khoản của tôi</string>
+    <string name="prepaid_records">Lịch sử nạp tiền</string>
+    <string name="consumption_records">Lịch sử tiêu thụ</string>
+    <string name="my_book_bean">Xu Tặng của tôi</string>
+    <string name="book_bean_show">Giải thích Xu Tặng </string>
+    <string name="expired_book_bean">Xem Xu Tặng hết hạn</string>
+    <string name="change_the_book_bean">兑换书豆</string>
+    <string name="bean">&#8194;xu tặng</string>
+    <string name="my_monthly">我的包月</string>
+    <string name="open_monthly">开通包月</string>
+    <string name="sign_in_rules">Quy tắc thưởng đăng nhập và điểm danh</string>
+    <string name="free">Miễn phí</string>
+
+<!--    <string name="all_comments">Tất cả bình luận</string>-->
+
+    <string name="comment_on_details">Comment details</string>
+    <string name="experience_immediately">Hãy thử ngay bây giờ</string>
+    <string name="my_bookshelf">Library</string>
+    <!--    <string name="select">Nổi bật</string>-->
+    <string name="boy">Con trai</string>
+    <string name="girl">Nữ sinh</string>
+    <string name="ranking">Xếp hạng</string>
+
+    <string name="fan_list">粉丝榜</string>
+    <string name="fans_rules">Quy tắc Fans</string>
+    <string name="login_in">Tới trang chủ</string>
+    <string name="bind_phone_number">绑定手机号</string>
+    <string name="reading_preferences">Cài đặt Sở thích đọc sách</string>
+
+    <string name="to_report">Báo cáo</string>
+
+
+    <string name="mt_placed_top">Ghim bình luận</string>
+    <string name="cancel_mt_placed_top">Bỏ ghim bình luận</string>
+    <string name="cancel_mt_placed_top_success">Ghim bình luận thành công</string>
+    <string name="mt_placed_top_success">Đã bỏ ghim bình luận</string>
+    <string name="mt_banned">Chặn bình luận</string>
+    <string name="cancel_mt_banned">Bỏ chặn bình luận</string>
+    <string name="mt_banned_success">Ghim bình luận thành công</string>
+    <string name="cancel_mt_banned_success">Đã bỏ ghim bình luận</string>
+
+    <string name="published">Gửi</string>
+    <string name="directory">Table of Contents</string>
+    <string name="more">MORE</string>
+    <string name="activity_rules">Quy tắc hoạt động</string>
+    <string name="common_more">More</string>
+    <string name="help">Trợ giúp</string>
+    <string name="signed_in_label">Đang điểm danh</string>
+
+
+    <string name="entries_yet">No data~</string>
+    <string name="reverse_order">Reverse order</string>
+    <string name="positive_sequence">In order</string>
+
+
+    <!--    <string name="buy_more">Mua nhiều chương</string>-->
+
+    <string name="cache_success">Cache success</string>
+    <string name="purchase_failed">Failed to purchase!</string>
+    <string name="buging_to">Purchasing…</string>
+    <string name="monthly_success"> Mua hàng tháng thành công</string>
+    <string name="buy_fail">Thanh toán thất bại</string>
+
+    <string name="set_success">Cài đặt thành công</string>
+    <string name="maximum_word">Enter a maximum of 2000 words o(╯□╰)o </string>
+
+
+    <string name="mailbox_copied">邮箱已复制，发送邮件加入我们~</string>
+    <string name="looking_forward_join">／我们期待你的加入／</string>
+    <string name="choose_apply">Chọn ứng dụng</string>
+    <string name="seting">Setting···</string>
+
+
+    <string name="loading_off">Logging out</string>
+    <string name="cleaning">Cleaning up···</string>
+    <string name="clean_success">Cleared！</string>
+    <string name="request_failed">Điểm danh không thành công</string>
+    <string name="series_completed">Các nhiệm vụ này đã được hoàn thành~</string>
+
+    <string name="collecting">Đang nhận ···</string>
+    <string name="congratulations_success">Chúc mừng bạn đã nhận được thành công</string>
+    <string name="choose_your_reading">Chỉ cần chọn loại bạn yêu thích,chúng tôi sẽ giới thiệu các tác phẩm phù hợp nhất cho bạn</string>
+
+
+    <string name="enter_exchange_code">Vui lòng nhập mã đổi</string>
+
+    <string name="personal_particulars_unchanged">Personal information has not changed</string>
+    <string name="photo_uploading">Uploading…</string>
+    <string name="info_update">Changing information…</string>
+    <string name="updata_success">Changed Successfully</string>
+    <string name="upload_success">Changed successfully </string>
+    <string name="upload_fail">upload failed</string>
+    <string name="secret">Bảo mật</string>
+    <string name="refused_camera">You have rejected the application to use the camera!</string>
+
+    <string name="looking_forward_comments">Mong nhận được ý kiến tuyệt vời của bạn~</string>
+    <string name="reply">Reply</string>
+    <string name="like">Like</string>
+    <string name="book_review">Đánh giá sách~</string>
+
+    <string name="cancel_success">Cancel like!</string>
+    <string name="give_like_success">Liked!</string>
+    <string name="looking_wonderful_comments">Look forward to your wonderful comments, let more people see ~</string>
+
+    <string name="look_all">Check all %d&#8194;replies>></string>
+    <string name="serial">Đang cập nhật</string>
+    <string name="totil_chapter">Tổng cộng %d&#8194;chương</string>
+    <string name="this_work_noyet">Tác phẩm này chưa có Fans ~</string>
+    <string name="fan_value">Giá trị Fans: %s</string>
+    <string name="input_content">Vui lòng nhập một bình luận</string>
+    <string name="statement">Đang gửi...</string>
+
+
+    <string name="add_bookcase">Add to library</string>
+    <string name="just">Just now</string>
+    <string name="minutes_ago">&#8194; minutes ago</string>
+    <string name="hours_before">&#8194;hour ago</string>
+    <string name="in_the_serial">&#8194;Loading</string>
+
+    <string name="bookshelf_added_successfully">Added to library</string>
+    <string name="bookshelf_added_sure">Hope to see you again! Add me to your library?</string>
+    <string name="bookshelf_added_content">You will receive notifications when the story is updated.</string>
+
+    <string name="cancel_bookshelf_added_successfully">You have removed this story from your Library. </string>
+    <string name="tourists">Tourist</string>
+    <string name="to_prepaid_phone">Nạp tiền</string>
+    <string name="close_all">Đóng tất cả</string>
+    <string name="all_open">Mở tất cả</string>
+    <string name="three_thousand">0/3000</string>
+    <string name="authors_contact_official">Chỉ dùng cho tác giả gửi truyện chính thức</string>
+    <string name="level_growth">Mức tăng cấp độ </string>
+
+    <string name="vip_level">Cấp VIP</string>
+    <string name="book_grade">Đánh giá truyện này</string>
+    <string name="author_easy">Tác giả viết truyện không dễ, viết bình luận để sưởi ấm tác giả ...</string>
+
+    <string name="author_working_draft">Update</string>
+
+    <string name="author_ongoing">Ongoing</string>
+    <string name="author_encouragement">This is the latest update</string>
+
+    <string name="send">Publish</string>
+    <string name="click_write_chapter_comment">Nhấn vào đây để bình luận chương này</string>
+    <string name="why_need_permission">Tại sao bạn cần sự cho phép?</string>
+
+    <string name="empty_bookshelf_fill">No data</string>
+
+    <string name="find_good_book">Go get a good book</string>
+
+    <string name="thanks_encouragement">Gift is successful!</string>
+    <string name="fantastic_book">This book is really good! Give a little gift! Thanks to the author!</string>
+    <string name="custom_tip">Phần thưởng tùy bạn</string>
+    <string name="input_money">Vui lòng nhập số tiền thưởng</string>
+
+
+    <string name="the_previous_chapter">Previous chapter</string>
+
+    <string name="the_next_chapter">Next chapter</string>
+
+    <string name="shop_name">Flip</string>
+    <string name="system_reading_progress">Hệ thống phát hiện tiến trình đọc hiện tại của bạn</string>
+
+    <string name="there_no_data">No more results</string>
+    <string name="eceiving_books_beans">Chúc mừng bạn đã nhận được 50 Xu Tặng</string>
+    <string name="fifty_book_beans">50&#8194;xu tặng</string>
+
+    <string name="wedding_package">Chúc mừng bạn có một gói tặng người mới có thể nhận!</string>
+    <string name="sign_rules">Phần thưởng đăng nhập</string>
+    <string name="top_up_award">Phần thưởng nạp tiền</string>
+    <string name="girl_novel">Tiểu thuyết nữ</string>
+    <string name="bestsellers">Truyện HOT</string>
+    <string name="subscription_book_currency">Theo dõi dùng Xu Tặng</string>
+    <string name="write_comment">Write</string>
+
+    <string name="quckly_write_comment">Write comment</string>
+    <string name="look_all_comment">All comments</string>
+    <string name="wonderful_comments">Come and comment~~</string>
+    Click Load More
+    <string name="its_hot">Truyện HOT cùng một loại</string>
+    <string name="book_friends_like">Bạn bè cũng thích</string>
+
+
+    <string name="exchange">Đổi</string>
+    <string name="warm_tips">Chú ý:</string>
+
+    <string name="exchange_hint1">1. Mã đổi là mã đổi nhận được khi tham gia các hoạt động truyền bá</string>
+    <string name="exchange_hint2">2. Sau khi đổi mã, bạn có thể nhận được Xu Tặng tương ứng, bạn có thể xem nó trong trung tâm cá nhân [Tài khoản của tôi] - [Xu Tặng của tôi]</string>
+
+    <string name="book_bean_available">Xu Tặng có thể sử dụng:</string>
+    <string name="book_bean_instructions">Giải thích Xu Tặng?</string>
+
+    <string name="code_for_books_beans">兑换码兑换书豆</string>
+    <string name="view_books_beans">Xem Xu Tặng hết hạn</string>
+
+
+    <!--阅读弹窗-->
+    <string name="read_quit">Quit</string>
+    <string name="read_continue">Read Next Story</string>
+
+    <!--书库-->
+
+    <string name="library_tag">TAGS</string>
+    <string name="library_tags">Tags</string>
+
+    <string name="library_all">All</string>
+    <string name="library_male">Male</string>
+    <string name="library_female">Female</string>
+    <string name="library_charge">Charge</string>
+    <string name="library_free">Free</string>
+    <string name="library_uncompleted">Uncompleted</string>
+    <string name="library_completed">Completed</string>
+
+    <!--发现页-->
+    <string name="discover_more">More</string>
+    <string name="discover_tamat">Tamat</string>
+    <string name="discover_history">Chapter&#8194;</string>
+
+
+    <!--书架Manage my library!-->
+    <string name="library_manage_hint">Click to see more operations</string>
+    <string name="delete_shelf_radio">Are you sure to delete this novel from your Library?</string>
+    <string name="delete_shelf_checkall">Are you sure to delete these novels from your Library?</string>
+    <string name="delete_history_radio">Are you sure to delete this novel.</string>
+    <string name="delete_history_checkall">Are you sure to delete these novels.</string>
+    <!--管理-->
+    <string name="library_manage_update">Update reminder</string>
+    <string name="library_manage_edit">Edit Library</string>
+    <string name="library_manage_read">Read History</string>
+    <string name="boyi_update">Upgrade</string>
+    <string name="boyi_later">Later</string>
+    <string name="click_install">Install</string>
+
+    <!--榜单-->
+    <string name="discover_title">Discover</string>
+    <string name="rank_title">Rank</string>
+    <string name="genres_title">Genres</string>
+    <string name="trending_title">Featured</string>
+
+
+    <!--签到-->
+    <string name="library_sign_coins">Bonus</string>
+    <string name="library_sign_surprise">Surprise</string>
+    <string name="library_sign_hint">Check in daily (00:00 – 24:00 GMT+8).</string>
+    <string name="library_sign_read">Read Now</string>
+
+
+    <!--搜索-->
+    <string name="search_what">Guardian Of The Sea</string>
+    <string name="hot_search_cancel">Cancel</string>
+    <string name="hot_search_term">Popular tags</string>
+    <string name="change">Thay đổi</string>
+    <string name="hot_search_books">Popular books</string>
+    <string name="search_history">History</string>
+    <string name="search_keyword">Please input keyword</string>
+    <!--正在搜索-->
+    <string name="searching">Search...</string>
+
+    <!--设置-->
+    <string name="mine_log_in">Log In</string>
+    <string name="mine_top_sign">Log in to get more bonus</string>
+    <string name="mine_top_up">Top up</string>
+    <string name="mine_wallet">Wallet</string>
+    <string name="mine_billing_detail">Billing Detail</string>
+    <string name="mine_viewed">Viewed</string>
+    <string name="mine_help_feedback">Help &amp; Feedback</string>
+    <string name="mine_help">Help</string>
+    <string name="mine_help_unsolved">Unsolved problem?</string>
+
+    <string name="mine_about_us">About Us</string>
+    <string name="mine_login_hint">Log in to your account to sync your reading history and get more bouns!</string>
+    <string name="mine_wallet_hint">Tips:Bonus have the same value with coins.All Bonus will expire overtime. Please use before deadline.</string>
+    <string name="mine_setting">Settings</string>
+    <string name="mine_log_out">Log Out</string>
+
+    <!--设置-->
+    <string name="book_notifications_updates">Notifications</string>
+    <string name="feed_back">FeedBack</string>
+    <string name="about_us">About us</string>
+    <string name="clear_cache">Clear Cache</string>
+    <string name="cleaned_up">Cleared!</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="load_off">Logout</string>
+
+    <!--修改个人信息-->
+    <string name="personal_data">Edit information</string>
+    <string name="name">User name</string>
+    <string name="name_hint">Nickname</string>
+    <string name="sex">Gender</string>
+    <string name="birthday">Birthdate</string>
+    <string name="person_info">Introduction</string>
+    <string name="sure_update">Save</string>
+
+    <string name="unknown">Unknown</string>
+    <string name="boy_n">Male</string>
+    <string name="girl_n">Female</string>
+
+    <!--支付页-->
+    <string name="topup_title">Select the top-up amount</string>
+    <string name="topup_bouns">Bonus</string>
+    <string name="topup_coins">Coins</string>
+    <string name="topup_info_title">Q&amp;A</string>
+
+    <string name="topup_info_content">&#8197;1.The Bonus will be deducted first, please use it before the expiry date.\n\n
+    2.Recharge does not support refund.\n\n
+    3.Top-up Coins and Bonus are limited to NovelStar\n\n
+    4.If you have any questions,please contact us via email :cs@novelstar.top\n</string>
+    <string name="topup_restore_order">&#8197;5.Payment’s done but receive nothing?</string>
+    <string name="topup_restore_order_hint"><u>Restore</u></string>
+    <string name="topup_help">Need help? Please visit our</string>
+    <string name="topup_help_qa"><u>Q&amp;A</u></string>
+    <string name="topup_or">or</string>
+    <string name="topup_feedback"><u>Feedback</u></string>
+
+    <!--充值记录-->
+    <string name="bill_activity_received">Received</string>
+    <string name="bill_activity_consumed">Consumed</string>
+    <string name="bill_activity_expired">Bonus expired</string>
+    <string name="bill_expire_on">Expire on&#8194;</string>
+    <string name="bill_activity_chapter_unlock">Chapters Unlockd</string>
+
+    <!--通知开关管理-->
+    <string name="book_update">Novel Update Notifications</string>
+    <string name="dialog_update_title">NovelStar Notifications are currently turned off.</string>
+    <string name="dialog_update_content">App Notifications must be turned on in Settings to get novel notifications.</string>
+    <string name="auto_lock">Auto-unlock tick setting</string>
+    <string name="lock_hint">Unlock without downloading</string>
+
+    <!--反馈-->
+    <string name="feedback">Feedback</string>
+    <string name="chapter_feedback">Report</string>
+    <string name="hint_feedback">Please include any problems or suggestions you are experiencing</string>
+    <string name="leave_information">Write your email address here.</string>
+    <string name="feedback_send">Send</string>
+    <string name="please_enter_feedback">Please include any problems or suggestions you are experiencing</string>
+    <string name="is_submitted">being sent</string>
+    <string name="feedback_success">Feedback success</string>
+    <string name="no_internet">Slow internet connection, try again later！</string>
+    <string name="no_haved_order">No purchases can be restored.</string>
+    <string name="have_order_success">purchases have been restored.</string>
+    <string name="have_order_fail">Failed to restore purchase, please try again later or feed back to us.</string>
+    <string name="user_help_details"><u>Feedback</u></string>
+    <string name="have_order_success_more">purchases have been restored</string>
+    <string name="have_order_fail_more">purchases failed to restore</string>
+    <string name="have_order_more">，please try again later or feed back to us.</string>
+<!--    X purchases have been restored. Y purchases failed to restore-->
+    <!--专题和消息-->
+    <string name="announcement">Rank</string>
+    <string name="message">Message</string>
+    <string name="customer_message">Customer Service Assistant</string>
+    <string name="system_messages">System notification</string>
+    <string name="message_reply">Enter your reply</string>
+
+    <!--关于我们-->
+    <string name="version">Version:%s</string>
+    <string name="terms_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="login_comma">and&#160;</string>
+
+    <string name="home_into_book">Vào kho sách từ trang chủ, làm mới nội dung và duyệt để hoàn thành nhiệm vụ. Vào kho sách từ trang chủ, làm mới nội dung và duyệt để hoàn thành nhiệm vụ.</string>
+
+    <string name="no_recharge">Bạn chưa nạp tiền~</string>
+    <string name="no_consume">Bạn chưa có tiêu thụ nào~</string>
+    <string name="no_lookbook_record">You haven\'t read any book, let\'s read one now!</string>
+
+    <string name="momo_title">Xác nhận đơn hàng</string>
+<!--    <string name="facebook_app_id">1183785085341330</string>-->
+<!--    <string name="fb_login_protocol_scheme">fb1183785085341330</string>-->
+    <string name="facebook_app_id">3109292776063851</string>
+    <string name="fb_login_protocol_scheme">fb3109292776063851</string>
+
+    <string name="content_loading">loading···</string>
+    <string name="loading">Loading...</string>
+
+    <string name="reload_the">Reload</string>
+    <string name="go_login">Login</string>
+    <string name="current_balance">Coins to unlock this chapter</string>
+    <string name="load_fail">Load Fail!</string>
+
+    <string name="buy_more_chapter">Unlock multiple Chapters</string>
+    <string name="poking_fun">COMMENTS</string>
+    <string name="paid_chapter">Chương này là chương phải trả phí</string>
+    <string name="after_purchase_can">Bạn có thể tiếp tục đọc sau khi mua,cảm ơn bạn đã </string>
+    <string name="after_purchase_can_two"> hỗ trợ cho sự bảo hộ bản quyền</string>
+    <string name="section_buy_automatically">Turn on auto-unlock</string>
+    <string name="current_balance_s">Số dư hiện tại của bạn：%d&#8194;xu %d&#8194;Xu Tặng</string>
+
+    <string name="detail_rewarding">Loading···</string>
+
+    <string name="remaining_beans">Còn lại: %d&#8194;Xu Tặng</string>
+    <string name="published_success">Done!</string>
+    <string name="get_in">Nhận···</string>
+
+    <string name="login_seccess">Logged in</string>
+    <string name="geting_info">Retrieving user information</string>
+    <string name="clean_all">Cleared</string>
+    <string name="download">Download</string>
+
+<!--    keytool -exportcert -alias key0 -keystore /Users/aiyechuangwei/StudioProjects/novelstar_android/NovelStar.jks | openssl sha1 -binary | openssl base64-->
+    <string name="net_connected_properly">Please check if the network is working properly</string>
+    <string name="click_retry">Click retry</string>
+    <string name="no_you_like">There\'s no result</string>
+    <string name="official_contact">  Vui lòng liên hệ với chúng tôi: noveltok.qa@gmail.com</string>
+    <string name="no_your_requirements">Không có công việc đáp ứng tiêu chí của bạn~</string>
+    <string name="author_greatly">Completed</string>
+    <string name="cleaning_empty">Clearing</string>
+    <string name="day_ago">&#8194;day ago</string>
+    <string name="money_ago">&#8194;month ago</string>
+
+    <string name="infringement">Vi phạm bản quyền</string>
+    <string name="personal_attack">Tấn công cá nhân</string>
+    <string name="advertising">Quảng cáo</string>
+    <string name="pornographic">Khiêu dâm</string>
+    <string name="sensitive">Nhạy cảm</string>
+    <string name="no_system_messages">Chưa có tin tức hệ thống</string>
+    <string name="deleting">Đang xóa···</string>
+    <string name="delete_success">Đã xóa！</string>
+    <string name="least_dollars_required">Ít nhất phần thưởng 50 Xu nhé ~</string>
+
+    <string name="report_success"> Báo cáo thành công</string>
+    <string name="report_empty">Nội dung báo cáo chưa viết !</string>
+
+    <string name="pay_upload">Payment loading</string>
+    <string name="pull_on_loading">Pull on loading</string>
+    <string name="loosen_the_load">Loosen the load</string>
+    <string name="being_loaded">loading</string>
+    <string name="pull_loaded">loaded</string>
+
+    <!-- bganLuong支付-->
+
+
+    <string name="share_facebook">facebook</string>
+    <string name="share_zalo">zalo</string>
+
+    <string name="ycuwq_datepicker_hour">H</string>
+    <string name="ycuwq_datepicker_minute">m</string>
+    <!--    <string name="cancel">取消</string>-->
+    <!--    <string name="sure">确定</string>-->
+    <!--    <string name="choose_birthday">选择生日</string>-->
+    <string name="cancel">Hủy bỏ</string>
+    <string name="sure">Xác nhận</string>
+    <string name="choose_birthday">Chọn sinh nhật</string>
+
+    <string name="content_all_comments">Dear, your support is the author\'s  motivation for writing!</string>
+    <string name="chapter_report_zi">0/1000</string>
+<!--    <string name="chapters">chapters</string>-->
+    <string name="update">Update</string>
+    <string name="completed">Completed</string>
+    <string name="coins">coins</string>
+    <string name="my_account">My Account:</string>
+    <string name="balance">Balance</string>
+    <string name="support">SUPPORT</string>
+
+    <string name="current_chapter">Starting from&#8194;</string>
+    <string name="purchase_coins_read">Purchase coins to read</string>
+    <string name="recomment_hint1">to receive&#8194; </string>
+    <string name="recomment_hint2">&#8194;Bouns!</string>
+    <string name="purchase_coins_to_support">Purchase coins to support</string>
+    <string name="add">ADD</string>
+    <string name="top_up_read">Purchase coins to read</string>
+    <string name="top_comments">Top Comments</string>
+    <string name="all_comments">All comments</string>
+    <string name="add_a_comment">Add a comment</string>
+    <string name="you_will_also_like">You Will also Like</string>
+    <string name="you_may_also_like">You May Also Like</string>
+
+    <string name="similar_books">Similar books</string>
+    <string name="continue_read">CONTINUE READ</string>
+
+    <string name="comment">Comment</string>
+    <string name="publish">Publish</string>
+    <string name="publish_comment_hint">High quality reviews will be displayed first ~</string>
+
+    <string name="description">Description</string>
+    <string name="chapters">Chapters</string>
+    <string name="comments">Comments</string>
+    <string name="go_top_up">Top up</string>
+    <string name="remaining">All remaining&#8194;</string>
+
+    <string name="email_null">Please leave contact information</string>
+    <string name="email_format_wrong">Wrong email address</string>
+    <string name="all_content_displaye">All contentdisplaye</string>
+    <string name="coins_batance"> Coins balance</string>
+
+    <string name="auto_unlock">Turn on auto-unlock</string>
+    <string name="read_share_facebook">Share this story to Facebook</string>
+    <string name="report_story">Report this story</string>
+
+    <string name="select_photo_hint">Submit pictue about the issue</string>
+
+    <string name="read_recommend"> The later chapters look better, let’s take a look</string>
+    <string name="read_recommend_tailor"> Tailor book for you</string>
+    <string name="read_recommend_switch"> SWITCH</string>
+    <string name="read_recommend_slave"> The Alpha King’s Hated Slave</string>
+    <string name="read_recommend_detail">Book detail</string>
+    <string name="read_recommend_detail_chapter">LIST</string>
+
+    <string name="payment_mothed">Payment Method</string>
+
+    <string name="hottest">Hottest</string>
+    <string name="newest">Newest</string>
+    <string name="auther">Auther</string>
+    <string name="top">Top</string>
+
+    <string name="minnum">最少选择一张图片</string>
+    <string name="maxnum">最多选择%1$d张图片</string>
+    <string name="sd_disable">SD卡不可用</string>
+
+    <string name="takephoto">拍照</string>
+
+    <string name="confirm_format">%1$s(%2$d/%3$d)</string>
+
+    <string name="open_camera_failure">打开相机失败</string>
+
+    <string name="permission_storage_denied">请打开存储空间权限</string>
+
+    <string name="permission_camera_denied">请打开相关权限</string>
+
+    <!--任务中心    -->
+    <string name="task_remind_tip">Please turn on the system notification switch to remind you to check-in every day.</string>
+    <string name="task_remind_open">Go to open</string>
+    <string name="task_remind_sign">Check-in daily (00:00 - 24:00 GMT+8).</string>
+    <string name="task_item_open">Open</string>
+    <string name="task_item_recharge">Recharge</string>
+    <string name="task_item_go">Go</string>
+    <string name="task_item_claime">Claim</string>
+    <string name="task_item_claimed">Claimed</string>
+    <string name="task_daily_title">Daily task </string>
+    <string name="task_new_title">New user </string>
+    <string name="task_sign_title">Check in successfull</string>
+    <string name="task_sign_recommend">Recommended for you</string>
+    <string name="task_complete_finish">Finished</string>
+    <string name="task_read_title">Today’s Reading Challenge</string>
+    <string name="task_read_time">Reading time:</string>
+    <string name="report_type_title">Type</string>
+    <string name="report_dis">Describe your lssues</string>
+    <string name="report_type_hint">Please choose a type of lssue</string>
+    <string name="report_photo_dis">Submit picture about the issue</string>
+    <string name="persion_bonus_limit">Bonus expire soon</string>
+    <string name="wallet_bonus_tip">Bonus will expire in 3 days</string>
+    <string name="wallet_bonus_detail">Detail</string>
+    <string name="wallet_bonus_expiring">Expiring</string>
+    <string name="wallet_bonus_dialog_bonus">Only Bonus to expire within 3 days are shown</string>
+    <string name="wallet_bonus_request_tip">Used bonus are not included in expiring bonus. To get more details, please check your own consumed records in "Wallet".</string>
+    <string name="string_placeholder">AAAAAA</string>
+    <string name="wallet_bonus_empty">Not recorded yet.</string>
+    <string name="push_update_noti">Open notification</string>
+
+    <string name="unlock_and_download">Unlock and download</string>
+    <string name="unlock">Unlock</string>
+    <string name="Successfully_unlocked">Successfully unlocked</string>
+    <string name="download_loading">Downloading: </string>
+
+<!--    <string name="chapters_num">chương</string>-->
+<!--    <string name="chapters_hint">Tất cả các chương còn lại</string>-->
+    <string name="add_shelf_hint">Enjoying this story ?\nAdd it to your Library</string>
+    <string name="added_shelf">Added your Library</string>
+    <string name="shop_down_name">Scroll</string>
+    <string name="read_typeface_merriweatherr">Merriweather</string>
+    <string name="read_typeface_roboto">Roboto</string>
+    <string name="added_shelf_subcribe">This story has been added to the library.</string>
+
+    <string name="tips_back">Back</string>
+    <string name="tips_download">Download</string>
+    <string name="tips_more">More</string>
+    <string name="tips_list">List</string>
+    <string name="tips_settings">Settings</string>
+    <string name="tips_mode">Night Mode</string>
+    <string name="tips_comment">Comment</string>
+    <string name="tips_tap">Tap here for options</string>
+</resources>

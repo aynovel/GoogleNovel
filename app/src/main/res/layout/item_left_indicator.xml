@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_check_white_transparent"
+        android:button="@null"
+        android:clickable="false"
+        android:drawableLeft="@drawable/selector_ranking_module_indicator"
+        android:drawablePadding="20dp"
+        android:focusable="false"
+        android:gravity="center_vertical"
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp"
+        tools:text="@string/bestsellers"
+        android:textColor="@color/selector_check_red_black"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/iv_type"
+        android:layout_width="25dp"
+        android:layout_gravity="center"
+        android:layout_height="25dp"/>
+</FrameLayout>
+
+

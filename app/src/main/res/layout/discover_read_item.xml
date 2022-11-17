@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="96dp"
+            android:layout_height="129dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/default_work_cover"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/book_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:lines="2"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxEms="7"
+        android:textColor="@color/discover_name"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_hot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/icon_hot_read"
+            tools:ignore="ContentDescription,RtlHardcoded" />
+
+
+        <TextView
+            android:id="@+id/read_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/theme_color"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

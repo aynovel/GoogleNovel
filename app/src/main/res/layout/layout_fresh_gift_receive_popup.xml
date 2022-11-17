@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corner_15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="127dp"
+        android:layout_height="110dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/recommend_fresher_gift_icon_big" />
+
+    <TextView
+        android:id="@+id/voucher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/fifty_book_beans"
+        android:textColor="@color/dark_2_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/wedding_package"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/dark_3_color"
+        android:textSize="14sp" />
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/receive"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/shape_red_corner_5dp"
+        android:gravity="center"
+        android:text="@string/aiye_receive_now"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@drawable/selector_list_selector"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="天才小毒妃"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginRight="30dp"
+        android:textColor="@color/color_000001"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/img_clear"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="right|center"
+        android:src="@drawable/icon_x"/>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

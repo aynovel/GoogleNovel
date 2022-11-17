@@ -1,0 +1,25 @@
+<resources>
+
+    <dimen name="WheelItemTextSize">16sp</dimen>
+    <dimen name="WheelSelectedItemTextSize">18sp</dimen>
+    <dimen name="WheelItemHeightSpace">16dp</dimen>
+    <dimen name="WheelItemWidthSpace">32dp</dimen>
+
+    <!---->
+    <dimen name="nb.divider.line">0.5dp</dimen>
+    '
+    <!--text-->
+    <!--二级标题-->
+
+    <!--小标签-->
+
+
+    <!--书籍的封面-->
+
+    <!--read-->
+    <dimen name="nb.read.text.bottom">12dp</dimen>
+
+    <!--read setting-->
+    <dimen name="nb.read_setting.divider">20dp</dimen>
+    <dimen name="nb.read_setting.btn_height">35dp</dimen>
+</resources>

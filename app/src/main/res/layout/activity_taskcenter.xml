@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_F7F4F0"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <life.forever.cf.publics.weight.TaskScrollView
+        android:id="@+id/nsRootView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:src="@drawable/bg_taskcenter_head"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="375:242"/>
+
+
+
+            <life.forever.cf.publics.weight.RadiusImageView
+                android:id="@+id/imgHead"
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/banned"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="80dp"
+                app:is_circle="true"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <TextView
+                android:id="@+id/tvBonusNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/imgHead"
+                app:layout_constraintTop_toTopOf="@id/imgHead"
+                app:layout_constraintBottom_toBottomOf="@id/imgHead"
+                android:text="330"
+                android:textColor="@color/colorWhite"
+                android:textSize="38sp"
+                android:layout_marginLeft="12dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvBonus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/tvBonusNum"
+                app:layout_constraintBaseline_toBaselineOf="@+id/tvBonusNum"
+                android:text="bonus"
+                android:textColor="@color/colorWhite"
+                android:textSize="14sp"
+                android:layout_marginLeft="3dp"/>
+
+
+            <TextView
+                android:id="@+id/tvDetail"
+                android:layout_width="72dp"
+                android:layout_height="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/imgHead"
+                app:layout_constraintBottom_toBottomOf="@+id/imgHead"
+                android:layout_marginRight="20dp"
+                android:text="Detail"
+                android:gravity="center"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                app:layout_constraintDimensionRatio="72:28"
+                android:background="@drawable/bg_taskcenter_detail"/>
+
+<!--            签到任务-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardSign"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@+id/imgHead"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintDimensionRatio="343:261"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tvCardTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Tomorrow you’ll get"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintLeft_toRightOf="@+id/imgCardHead"/>
+
+
+                    <ImageView
+                        android:id="@+id/imgCardHead"
+                        android:layout_width="3dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_F9791C"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tvCardTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvCardTitle"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvCardTitle"
+                        android:layout_marginLeft="15dp" />
+
+
+                    <TextView
+                        android:id="@+id/tvRemind"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvCardTitle"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvCardTitle"
+                        android:layout_marginRight="15dp"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12sp"
+                        android:text="Remind"/>
+
+
+                    <TextView
+                        android:id="@+id/tvCardContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCardTitle"
+                        android:layout_marginTop="10dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvCardTitle"
+                        android:text="@string/task_remind_sign"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12dp"/>
+
+
+                    <life.forever.cf.publics.weight.TaskCheckBox
+                        android:id="@+id/cbCardRemind"
+                        android:layout_width="32dp"
+                        android:layout_height="16dp"
+                        android:background="@drawable/selector_boyi_switch_orange"
+                        android:button="@null"
+                        app:layout_constraintDimensionRatio="2:1"
+                        app:layout_constraintRight_toRightOf="@+id/tvRemind"
+                        app:layout_constraintTop_toTopOf="@+id/tvCardContent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvCardContent"/>
+
+                    <!--            开关上的蒙版 -->
+
+                    <ImageView
+                        android:id="@+id/imgMask"
+                        android:layout_width="32dp"
+                        android:layout_height="16dp"
+                        app:layout_constraintDimensionRatio="2:1"
+                        android:background="@drawable/bg_taskcenter_mask"
+                        app:layout_constraintRight_toRightOf="@+id/tvRemind"
+                        app:layout_constraintTop_toTopOf="@+id/tvCardContent"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvCardContent"
+                        android:visibility="gone"/>
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/signRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvCardContent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toRightOf="parent"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="20dp" />
+
+
+                    <TextView
+                        android:id="@+id/tvRemainTip"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_constraintDimensionRatio="300:78"
+                        app:layout_constraintTop_toBottomOf="@+id/cbCardRemind"
+                        app:layout_constraintRight_toRightOf="parent"
+                        app:layout_constraintRight_toLeftOf="parent"
+                        android:layout_marginLeft="34dp"
+                        android:layout_marginRight="9dp"
+                        android:paddingTop="23dp"
+                        android:paddingRight="16dp"
+                        android:paddingLeft="16dp"
+                        android:textColor="@color/color_333333"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        android:background="@drawable/icon_taskcenter_tip"
+                        android:text="@string/task_remind_tip"/>
+
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--              阅读任务-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardRead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardSign"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgReadHead"
+                        android:layout_width="3dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_F9791C"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tvReadTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvReadTitle"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvReadTitle"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvReadTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="@string/task_read_title"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintLeft_toRightOf="@+id/imgReadHead"/>
+
+                    <TextView
+                        android:id="@+id/tvReadContent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvReadTitle"
+                        android:layout_marginTop="8dp"
+                        app:layout_constraintLeft_toLeftOf="@+id/tvReadTitle"
+                        android:text="Reading time: 5 min"
+                        android:textColor="@color/color_999999"
+                        android:textSize="12dp"/>
+
+                    <life.forever.cf.publics.weight.ReadTipView
+                        android:id="@+id/readTipView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvReadContent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginBottom="15dp"/>
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            新手任务-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardNew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardRead"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgNewHead"
+                        android:layout_width="3dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_F9791C"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tvNewTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvNewTitle"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvNewTitle"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvNewTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="New user (1/5)"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintLeft_toRightOf="@+id/imgNewHead"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/newRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvNewTitle"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingBottom="28dp" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+<!--            每日任务-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/cardNew"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="14dp"
+                app:cardElevation="8dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgDailyHead"
+                        android:layout_width="3dp"
+                        android:layout_height="10dp"
+                        android:background="@color/color_F9791C"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintRight_toLeftOf="@+id/tvDailyTitle"
+                        app:layout_constraintTop_toTopOf="@+id/tvDailyTitle"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvDailyTitle"
+                        android:layout_marginLeft="15dp" />
+
+                    <TextView
+                        android:id="@+id/tvDailyTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="Daily task (0/1)"
+                        android:textSize="16sp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/colorBlack"
+                        app:layout_constraintLeft_toRightOf="@+id/imgDailyHead"/>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/dailyRecyclerView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@+id/tvDailyTitle"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:paddingBottom="28dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </life.forever.cf.publics.weight.TaskScrollView>
+
+
+    <ImageView
+        android:id="@+id/imgStatusbar"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/imgTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgStatusbar"/>
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="@+id/imgTitleView"
+        app:layout_constraintRight_toRightOf="@+id/imgTitleView"
+        app:layout_constraintTop_toTopOf="@+id/imgTitleView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgTitleView"
+        android:text="Task center"
+        android:textSize="18sp"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"/>
+
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        app:layout_constraintLeft_toLeftOf="@+id/imgTitleView"
+        app:layout_constraintTop_toTopOf="@+id/imgTitleView"
+        app:layout_constraintBottom_toBottomOf="@+id/imgTitleView"
+        android:src="@drawable/back_white"
+        android:layout_marginLeft="15dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

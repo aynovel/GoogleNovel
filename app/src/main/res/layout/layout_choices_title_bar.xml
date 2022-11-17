@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/left_image_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:src="@drawable/ack_icon_gray" />
+
+    <TextView
+        android:id="@+id/middle_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:text="@string/ranking_activity_title"
+        android:textColor="@color/dark_2_color"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/right_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:drawablePadding="3dp"
+        android:drawableRight="@drawable/jjf"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/ranking_activity_week"
+        android:textColor="@color/dark_2_color"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/divider"
+        style="@style/common_horizontal_line"
+        android:layout_gravity="bottom" />
+</FrameLayout>

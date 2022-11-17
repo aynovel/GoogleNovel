@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <life.forever.cf.publics.weight.ReadTaskView
+        android:id="@+id/readTaskView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="2"/>
+
+    <TextView
+        android:id="@+id/tvTipView"
+        android:layout_width="80dp"
+        android:layout_height="31dp"
+        android:text="30 min more"
+        android:textColor="@color/colorWhite"
+        android:textSize="11sp"
+        android:paddingTop="4dp"
+        android:tag="1"
+        android:gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/icon_readview_tip"/>
+
+
+
+
+</RelativeLayout>

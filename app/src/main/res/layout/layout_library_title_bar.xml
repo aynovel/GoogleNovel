@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/left_image"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/back_icon"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/left_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:textColor="@color/dark_2_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/middle_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_vertical"
+        android:maxWidth="180dp"
+        android:lines="1"
+        android:textColor="@color/dark_2_color"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/layout_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:orientation="horizontal"
+        tools:ignore="RtlHardcoded,UseCompoundDrawables">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center_vertical"
+            android:text="@string/library_tag"
+            android:paddingLeft="10dp"
+            android:paddingRight="8dp"
+            android:textColor="@color/dark_2_color"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingRight="13dp"
+            android:src="@drawable/icon_down"
+            tools:ignore="ContentDescription,RtlSymmetry" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/divider"
+        style="@style/common_horizontal_line"
+        android:layout_gravity="bottom" />
+
+</FrameLayout>

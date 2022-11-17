@@ -1,0 +1,426 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="LoadingView">
+        <attr name="size" format="dimension" />
+        <attr name="android:color" />
+    </declare-styleable>
+
+    <attr name="RadiusImageView" format="reference" />
+    <declare-styleable name="RadiusImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="selected_mask_color" format="color" />
+        <attr name="selected_border_color" format="color" />
+        <attr name="selected_border_width" format="dimension" />
+        <attr name="corner_radius" format="dimension" />
+        <attr name="is_oval" format="boolean" />
+        <attr name="is_circle" format="boolean" />
+        <attr name="is_touch_select_mode_enabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="AutoRollBanner">
+        <attr name="normalDotSrc" format="reference" />
+        <attr name="selectDotSrc" format="reference" />
+        <attr name="marginBetweenDots" format="dimension" />
+        <attr name="dotsBottomMargin" format="dimension" />
+        <attr name="dotSize" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="left_show_image" format="boolean" />
+        <attr name="left_src" format="reference" />
+        <attr name="left_size" format="dimension" />
+        <attr name="left_color" format="color" />
+        <attr name="left_text" format="string" />
+        <attr name="middle_text" format="string" />
+        <attr name="middle_size" format="dimension" />
+        <attr name="middle_color" format="color" />
+        <attr name="right_show_image" format="boolean" />
+        <attr name="right_src" format="reference" />
+        <attr name="right_size" format="dimension" />
+        <attr name="right_color" format="color" />
+        <attr name="right_text" format="string" />
+        <attr name="show_divider" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="aiyeItemView">
+        <attr name="itemIcon" format="reference" />
+        <attr name="itemTitle" format="reference|string" />
+        <attr name="subTitle" format="reference|string" />
+        <attr name="itemType">
+            <flag name="tip" value="0" />
+            <flag name="button" value="1" />
+            <flag name="checkBox" value="2" />
+        </attr>
+        <attr name="itemTip" format="reference|string" />
+        <attr name="paddingLeft" format="dimension" />
+        <attr name="paddingRight" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="maxNumber" format="integer" />
+        <attr name="android:maxLines" />
+        <attr name="android:gravity" />
+    </declare-styleable>
+
+    <declare-styleable name="PowerEditText">
+        <!--功能的类型-->
+        <attr name="funcType">
+            <enum name="normal" value="-1" />
+            <enum name="canClear" value="0" />
+            <enum name="canWatchPwd" value="1" />
+        </attr>
+        <!--关闭查看密码的图标-->
+        <attr name="eyeClose" format="reference" />
+        <!--开启查看密码的图标-->
+        <attr name="eyeOpen" format="reference" />
+        <!--左侧Drawable的宽度-->
+        <attr name="leftDrawableWidth" format="dimension" />
+        <!--左侧Drawable的高度-->
+        <attr name="leftDrawableHeight" format="dimension" />
+        <!--右侧Drawable的宽度-->
+        <attr name="rightDrawableWidth" format="dimension" />
+        <!--右侧Drawable的高度-->
+        <attr name="rightDrawableHeight" format="dimension" />
+    </declare-styleable>
+
+        <attr name="halfVisibleItemCount" format="integer"/>
+        <attr name="itemTextSize" format="dimension"/>
+        <attr name="itemMaximumWidthText" format="string"/>
+        <attr name="itemTextColor" format="color"/>
+        <attr name="textGradual" format="boolean"/>
+        <attr name="selectedTextColor" format="color"/>
+        <attr name="selectedTextSize" format="dimension"/>
+        <attr name="currentItemPosition" format="integer"/>
+        <attr name="itemWidthSpace" format="dimension"/>
+        <attr name="itemHeightSpace" format="dimension"/>
+        <attr name="zoomInSelectedItem" format="boolean"/>
+        <attr name="wheelCyclic" format="boolean"/>
+        <attr name="wheelCurtain" format="boolean"/>
+        <attr name="wheelCurtainColor" format="color"/>
+        <attr name="wheelCurtainBorder" format="boolean"/>
+        <attr name="wheelCurtainBorderColor" format="color"/>
+        <attr name="indicatorText" format="string"/>
+        <attr name="indicatorTextSize" format="dimension"/>
+        <attr name="indicatorTextColor" format="color"/>
+        <declare-styleable name="WheelPicker">
+            <attr name="halfVisibleItemCount"/>
+            <attr name="itemTextSize"/>
+            <attr name="itemMaximumWidthText"/>
+            <attr name="itemTextColor"/>
+            <attr name="textGradual"/>
+            <attr name="selectedTextColor"/>
+            <attr name="selectedTextSize"/>
+            <attr name="currentItemPosition"/>
+            <attr name="itemWidthSpace"/>
+            <attr name="itemHeightSpace"/>
+            <attr name="zoomInSelectedItem"/>
+            <attr name="wheelCyclic"/>
+            <attr name="wheelCurtain"/>
+            <attr name="wheelCurtainColor"/>
+            <attr name="wheelCurtainBorder" />
+            <attr name="wheelCurtainBorderColor"/>
+            <attr name="indicatorText"/>
+            <attr name="indicatorTextSize"/>
+            <attr name="indicatorTextColor"/>
+        </declare-styleable>
+
+        <declare-styleable name="YearPicker">
+            <attr name="startYear" format="integer"/>
+            <attr name="endYear" format="integer"/>
+        </declare-styleable>
+
+        <declare-styleable name="MonthPicker">
+        </declare-styleable>
+
+        <declare-styleable name="DatePicker">
+            <attr name="halfVisibleItemCount"/>
+            <attr name="itemTextSize"/>
+            <attr name="itemTextColor"/>
+            <attr name="textGradual"/>
+            <attr name="selectedTextColor"/>
+            <attr name="selectedTextSize"/>
+            <attr name="itemWidthSpace"/>
+            <attr name="itemHeightSpace"/>
+            <attr name="zoomInSelectedItem"/>
+            <attr name="wheelCyclic"/>
+            <attr name="wheelCurtain"/>
+            <attr name="wheelCurtainColor"/>
+            <attr name="wheelCurtainBorder"/>
+            <attr name="wheelCurtainBorderColor"/>
+        </declare-styleable>
+
+        <declare-styleable name="HourAndMinutePicker">
+            <attr name="halfVisibleItemCount"/>
+            <attr name="itemTextSize"/>
+            <attr name="itemTextColor"/>
+            <attr name="textGradual"/>
+            <attr name="selectedTextColor"/>
+            <attr name="selectedTextSize"/>
+            <attr name="itemWidthSpace"/>
+            <attr name="itemHeightSpace"/>
+            <attr name="zoomInSelectedItem"/>
+            <attr name="wheelCyclic"/>
+            <attr name="wheelCurtain"/>
+            <attr name="wheelCurtainColor"/>
+            <attr name="wheelCurtainBorder"/>
+            <attr name="wheelCurtainBorderColor"/>
+        </declare-styleable>
+    <declare-styleable name="NiceRatingBar">
+        <attr name="nrb_ratingStatus">
+            <enum name="Disable" value="0" />
+            <enum name="Enable" value="1" />
+        </attr>
+        <attr name="nrb_starFullResource" format="reference" />
+        <attr name="nrb_starEmptyResource" format="reference" />
+        <attr name="nrb_starHalfResource" format="reference" />
+        <attr name="nrb_starImageWidth" format="dimension" />
+        <attr name="nrb_starImageHeight" format="dimension" />
+        <attr name="nrb_starImagePadding" format="dimension" />
+        <attr name="nrb_starTotal" format="integer" />
+        <attr name="nrb_rating" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="CollapsibleTextView">
+        <attr name="collapsedLines" format="integer"/> <!--最大显示行数，即超过该行数的部分折叠-->
+        <attr name="collapsedText" format="string"/><!--折叠时的后缀文字,eg.“展开”-->
+        <attr name="expandedText" format="string"/><!--展开时的后缀文字,eg.“收起”-->
+        <attr name="suffixColor" format="color"/><!--后缀文字颜色-->
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="delay_time" format="integer" />
+        <attr name="scroll_time" format="integer" />
+        <attr name="is_auto_play" format="boolean" />
+        <attr name="is_loop" format="boolean" />
+        <attr name="title_background" format="color|reference" />
+        <attr name="title_textcolor" format="color" />
+        <attr name="title_textsize" format="dimension" />
+        <attr name="title_height" format="dimension" />
+        <attr name="indicator_width" format="dimension" />
+        <attr name="indicator_height" format="dimension" />
+        <attr name="indicator_margin" format="dimension" />
+        <attr name="indicator_padding" format="dimension" />
+        <attr name="indicator_drawable_selected" format="reference" />
+        <attr name="indicator_drawable_unselected" format="reference" />
+        <attr name="banner_default_image" format="reference" />
+        <!-- 设置左右2边缩进距离 -->
+        <attr name="page_left_margin" format="dimension" />
+        <attr name="page_right_margin" format="dimension" />
+        <attr name="arc_height" format="dimension" />
+        <attr name="arc_start_color" format="color|reference" />
+        <attr name="arc_end_color" format="color|reference" />
+        <attr name="arc_direction" format="enum">
+            <enum name="up" value="0" />
+            <enum name="down" value="1" />
+        </attr>
+    </declare-styleable>
+    <attr name="rRadius" format="dimension" />
+    <attr name="rLeftRadius" format="dimension" />
+    <attr name="rRightRadius" format="dimension" />
+    <attr name="rTopRadius" format="dimension" />
+    <attr name="rBottomRadius" format="dimension" />
+    <attr name="rTopLeftRadius" format="dimension" />
+    <attr name="rTopRightRadius" format="dimension" />
+    <attr name="rBottomLeftRadius" format="dimension" />
+    <attr name="rBottomRightRadius" format="dimension" />
+    <attr name="rStrokeWidth" format="dimension" />
+    <attr name="rStrokeColor" format="color" />
+    <attr name="blur" format="integer"/>
+    <attr name="lineargradientColor" format="string" />
+    <attr name="lineargradientWeight" format="string"/>
+    <attr name="lineargradientDirectionType" format="enum">
+        <enum name="a" value="0"/>
+        <enum name="b" value="1"/>
+        <enum name="c" value="2"/>
+        <enum name="d" value="3"/>
+    </attr>
+
+
+    <declare-styleable name="RoundCorner">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <!--
+     作用：代码提示
+     1.RoundLinearLayout
+     2.RoundRelativeLayout
+     3.RoundFrameLayout
+     4.RoundImageView
+     5.RoundTextView
+     6.RoundView
+     7.RoundButton
+     -->
+
+    <declare-styleable name="RoundedLinearLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedRelativeLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedFrameLayout">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedImageView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedTextView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedView">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedButton">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+        <attr name="blur" />
+        <attr name="lineargradientColor" />
+        <attr name="lineargradientWeight" />
+        <attr name="lineargradientDirectionType" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedEditText">
+        <attr name="rRadius" />
+        <attr name="rLeftRadius" />
+        <attr name="rRightRadius" />
+        <attr name="rTopRadius" />
+        <attr name="rBottomRadius" />
+        <attr name="rTopLeftRadius" />
+        <attr name="rTopRightRadius" />
+        <attr name="rBottomLeftRadius" />
+        <attr name="rBottomRightRadius" />
+        <attr name="rStrokeWidth" />
+        <attr name="rStrokeColor" />
+    </declare-styleable>
+
+    <declare-styleable name="SpreadView">
+        <!--中心圆颜色-->
+        <attr name="spread_center_color" format="color" />
+        <!--中心圆半径-->
+        <attr name="spread_radius" format="integer" />
+        <!--扩散圆颜色-->
+        <attr name="spread_spread_color" format="color" />
+        <!--扩散间距-->
+        <attr name="spread_distance" format="integer" />
+        <!--扩散最大半径-->
+        <attr name="spread_max_radius" format="integer" />
+        <!--扩散延迟间隔-->
+        <attr name="spread_delay_milliseconds" format="integer" />
+    </declare-styleable>
+</resources>

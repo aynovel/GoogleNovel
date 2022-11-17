@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="279dp"
+        android:layout_height="382dp"
+        android:layout_gravity="center"
+        android:background="@drawable/icon_update_dialog"
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:id="@+id/versionName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="160dp"
+            android:gravity="center_horizontal"
+            android:textColor="@color/dark_2_color"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <life.forever.cf.publics.weight.viewtext.FixedTextView
+            android:id="@+id/versionDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/versionName"
+            android:lineSpacingExtra="5dp"
+            android:maxLines="5"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            android:textColor="@color/dark_3_color"
+            android:textSize="14sp" />
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp">
+
+            <LinearLayout
+                android:id="@+id/buttonLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                    android:id="@+id/cancel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_cancel"
+                    android:gravity="center"
+                    android:text="@string/boyi_later"
+                    android:textColor="#FD8427"
+                    android:textSize="15sp" />
+
+                <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                    android:id="@+id/update"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button_delete"
+                    android:gravity="center"
+                    android:text="@string/boyi_update"
+                    android:textColor="@color/color_FFFFFF"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:max="100"
+                android:progressDrawable="@drawable/ress_drawable"
+                android:visibility="gone" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/install"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="@string/click_install"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,30 @@
+buildscript {
+    repositories {
+
+        google()
+        jcenter()
+        mavenCentral()
+        maven {url 'https://developer.huawei.com/repo/'}
+
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.0.0'
+        classpath 'com.google.gms:google-services:4.3.3'
+        classpath 'com.jakewharton:butterknife-gradle-plugin:10.2.1'
+        classpath 'com.github.dcendents:android-maven-gradle-plugin:1.5'
+        classpath 'org.greenrobot:greendao-gradle-plugin:3.3.0'
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        mavenCentral()
+        maven { url 'https://jitpack.io' }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

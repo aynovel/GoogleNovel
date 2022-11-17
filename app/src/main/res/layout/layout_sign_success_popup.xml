@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape_white_corner_15dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="148dp"
+        android:layout_height="118dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/ess_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/mine_sign_success"
+        android:textColor="@color/dark_2_color"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/task_award_description"
+        android:textColor="@color/dark_3_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/signDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/mine_sign_continuous"
+        android:textColor="@color/gray_1_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/nextReward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="@string/mine_future_sign_days"
+        android:textColor="@color/gray_1_color"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/doTask"
+        android:layout_width="270dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_red_corner_5dp"
+        android:gravity="center"
+        android:text="@string/mine_want_do_task"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+</LinearLayout>

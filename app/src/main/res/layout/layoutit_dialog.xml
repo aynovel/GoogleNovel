@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:background="@drawable/shape_transparent_corner_5dp_dark_gray_border"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="3"
+        android:paddingBottom="8dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/dark_2_color"
+        android:textColorHint="@color/gray_2_color"
+        android:textSize="14sp" />
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/complete"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
+        android:layout_marginRight="10dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:minWidth="50dp"
+        android:lines="1"
+        android:background="@drawable/shape_red_corner_5dp"
+        android:gravity="center"
+        android:text="@string/aiye_complete"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>

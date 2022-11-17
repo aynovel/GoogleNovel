@@ -1,0 +1,649 @@
+<resources>
+    <string name="app_name">NovelTok</string>
+
+
+
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="loosen_to_refresh">松开刷新</string>
+    <string name="loading_refresh">正在刷新</string>
+    <string name="refresh_complete">刷新完成</string>
+
+    <string name="permission_to_illustrate">%s权限说明</string>
+    <string name="phone_permission">电话权限</string>
+    <string name="imei_permission">检验设备IMEI码，保证账号安全，防止账号被盗。</string>
+    <string name="storage_space_permissions">存储空间权限</string>
+    <string name="down_text">下载书籍文件，降低流量消耗</string>
+    <string name="find_version">发现新版本v%s</string>
+    <string name="no_internet">网络罢工啦！</string>
+    <string name="why_need">为什么需要%s？</string>
+
+    <string name="click_install">点击安装</string>
+
+    <string name="QQ_SCHEME">tencent1106751974</string>
+    <string name="QQ_APP_ID">1106751974</string>
+    <string name="QQ_SECRET">XSzspnFKtwpwbnXk</string>
+
+    <string name="WX_APP_KEY">wx21b897ffa578a910</string>
+    <string name="WX_SECRET">b687d7458ca08f41012b9542fd53a9f6</string>
+    <string name="WX_PAY_KEY">1GXk45qC7ReIBFC0p2zkUypvCE9XE5EX</string>
+
+    <string name="SINA_APP_KEY">3520931426</string>
+    <string name="SINA_SECRET">b43bdeace62a4abafb2ef2216f87da59</string>
+    <string name="SINA_CALLBACK">http://sns.whalecloud.com/sina2/callback</string>
+
+    <string name="EMAIL_URL">liying.liang01@boetech.cn</string>
+    <string name="QQ_GROUP">626093718</string>
+    <string name="QQ_GROUP_KEY">06tpegWIcbsW6gNIJ5ETAS0UyOJW3JK7</string>
+
+    <string name="boyi_exit_tip">再按一次退出%s</string>
+    <string name="boyi_select_all">全选</string>
+    <string name="boyi_cancel_select_all">取消全选</string>
+    <string name="boyi_clear">清空</string>
+    <string name="boyi_delete">删除</string>
+    <string name="boyi_setting">设置</string>
+    <string name="boyi_complete">完成</string>
+    <string name="boyi_cancel">取消</string>
+    <string name="boyi_add_to_shelf">加入书架</string>
+    <string name="boyi_check_now">立即查看</string>
+    <string name="boyi_receive_now">立即领取</string>
+    <string name="boyi_reject">不了</string>
+    <string name="boyi_screening">筛选</string>
+    <string name="boyi_reset">重置</string>
+    <string name="boyi_submit">提交</string>
+    <string name="boyi_collection">分享</string>
+    <string name="boyi_fans">粉丝</string>
+    <string name="boyi_reading">在读</string>
+    <string name="boyi_classify">分类</string>
+    <string name="boyi_status">状态</string>
+    <string name="boyi_price">价格</string>
+    <string name="boyi_word_count">字数</string>
+    <string name="boyi_sort">排序</string>
+    <string name="boyi_login">登录</string>
+    <string name="boyi_qq">QQ</string>
+    <string name="boyi_wechat">微信</string>
+
+    <string name="boyi_sina">新浪微博</string>
+    <string name="boyi_search">搜索</string>
+    <string name="boyi_update">更新</string>
+    <string name="boyi_later">稍后</string>
+    <string name="boyi_send_out">送出</string>
+    <string name="boyi_jump">跳过</string>
+
+    <string name="boyi_read_continue_ask">《%s》第%d章，是否前往？</string>
+    <string name="boyi_read_continue">继续阅读</string>
+
+    <string name="home_activity_book_shelf">书架</string>
+    <string name="home_activity_recommend">精选</string>
+    <string name="home_activity_book_library">书库</string>
+    <string name="home_activity_mine">我的</string>
+
+
+    <string name="shelf_manage_pop_list_show">列表显示</string>
+    <string name="shelf_manage_pop_grid_show">网格显示</string>
+    <string name="shelf_manage_pop_edit_shelf">编辑书架</string>
+    <string name="shelf_manage_pop_read_history">浏览历史</string>
+    <string name="shelf_manage_pop_update_push">更新通知</string>
+    <string name="shelf_full_tip">最多收藏100本作品噢(⊙o⊙)</string>
+
+    <string name="shelf_edit_pop_delete">删除(%d/%d）</string>
+
+    <string name="week_recommend_pop_title">暖心治愈</string>
+    <string name="week_recommend_pop_sub_title">没有人是一座孤岛，每本书都是一个世界。</string>
+    <string name="week_recommend_pop_receive">收入囊中</string>
+
+    <string name="ranking_activity_title">排行榜</string>
+    <string name="ranking_activity_week">周榜</string>
+    <string name="ranking_activity_day">日榜</string>
+    <string name="ranking_activity_month">月榜</string>
+    <string name="ranking_activity_total">总榜</string>
+
+
+    <string name="mine_user_id">用户ID：%d</string>
+    <string name="mine_sign_welfare">签到&amp;福利</string>
+    <string name="mine_sign_continuous">已连续签到%d天</string>
+    <string name="mine_do_task">做任务</string>
+    <string name="mine_future_sign_days">再坚持%d天就可获得大礼包哦～</string>
+
+    <string name="mine_user_account">我的账户</string>
+    <string name="mine_user_money">%d书币丨%d书豆</string>
+    <string name="mine_recharge">充值</string>
+
+    <string name="mine_user_month_vip">我的包月</string>
+    <string name="mine_user_month_date">到期：%s</string>
+    <string name="mine_user_month_open">开通</string>
+    <string name="mine_user_month_continue">续费</string>
+
+    <string name="mine_read_history">阅读历史</string>
+    <string name="mine_invite_friend">邀请好友</string>
+    <string name="mine_share_to_make_money">分享赚钱</string>
+    <string name="mine_user_book_comment">我的书评</string>
+    <string name="mine_user_help">帮助&amp;反馈</string>
+
+    <string name="mine_my_grade">我的等级：</string>
+    <string name="mine_sign_rule">签到奖励规则></string>
+    <string name="mine_sign">签到</string>
+    <string name="mine_signed">已签到</string>
+    <string name="mine_want_do_task">我要做任务</string>
+
+    <string name="task_completed">已完成</string>
+    <string name="task_wait_complete">待完成</string>
+    <string name="task_award_description">+%d书豆 +%d经验</string>
+    <string name="task_tip">任务小贴士</string>
+    <string name="task_award">任务奖励</string>
+    <string name="task_award_voucher">%d%s</string>
+    <string name="task_award_experience">%d点经验</string>
+    <string name="task_receive_award">领取奖励</string>
+
+    <string name="mine_sign_success">签到成功</string>
+
+    <string name="detail_reward">打赏</string>
+    <string name="detail_start_read">开始阅读</string>
+    <string name="detail_collect">收藏</string>
+    <string name="detail_collected">已收藏</string>
+
+    <string name="fans_value">粉丝值：%d</string>
+    <string name="reward_value">打赏%d书币</string>
+    <string name="comment_wonderful_comment">精彩评论</string>
+    <string name="comment_total_comment">全部评论</string>
+    <string name="comment_bracket_value">（%d）</string>
+    <string name="comment_null">评论内容为空！</string>
+    <string name="reply_poster">回复：楼主</string>
+    <string name="comment">评论</string>
+    <string name="login_input_phone_num">请输入手机号</string>
+    <string name="login_input_auth_code">请输入验证码</string>
+    <string name="login_get_auth_code">获取验证码</string>
+    <string name="login_last_login_way">上次登录方式：</string>
+    <string name="login_other_login_way">——  其他方式  ——</string>
+    <string name="login_service_qq">有任何问题请联系 QQ：626093718</string>
+    <string name="other">其他</string>
+    <string name="account_recharge_description">%.2f元充值（%s）</string>
+    <string name="account_recharge_value_both">+%d书币丨+%d书豆</string>
+    <string name="account_recharge_value_money">+%d书币</string>
+    <string name="account_recharge_value_voucher">+%d书豆</string>
+    <string name="voucher_enable_date">有效期至：%s</string>
+
+    <string name="book_money">书币</string>
+    <string name="book_space_money"> 书币</string>
+    <string name="permission_open">去开启</string>
+    <string name="permission_reject">残忍拒绝</string>
+    <string name="permission_known">我知道了</string>
+    <string name="facebook_app_id">246975123107978</string>
+    <string name="fb_login_protocol_scheme">fb246975123107978</string>
+
+    <string name="have_a_book_shortage">闹书荒？又无聊？快来和我一起下载</string>
+    <string name="watch_it_with_me">亲爱的，我发现了一本有趣的小说，快来陪我一起看哇~</string>
+    <string name="date_task">日常任务</string>
+    <string name="new_task">新手任务</string>
+    <string name="the_cumulative_task">累计任务</string>
+
+    <string name="my_news">我的消息</string>
+    <string name="reply_me">回复我的</string>
+
+    <string name="received_praise">收到的赞</string>
+    <string name="system_message">系统消息</string>
+    <string name="my_comments">我的评论</string>
+
+    <string name="book_purchase">书籍自动购买管理</string>
+
+    <string name="push_settings">推送设置</string>
+    <string name="about_us">关于我们</string>
+    <string name="author_joined">作者加入</string>
+    <string name="personal_data">个人资料</string>
+
+    <string name="my_accounts">我的账户</string>
+    <string name="prepaid_records">充值记录</string>
+    <string name="consumption_records">消费记录</string>
+    <string name="my_book_bean">我的书豆</string>
+    <string name="book_bean_show">书豆说明</string>
+    <string name="expired_book_bean">已失效书豆</string>
+    <string name="change_the_book_bean">兑换书豆</string>
+    <string name="bean">书豆</string>
+    <string name="space_bean"> 书豆</string>
+    <string name="my_monthly">我的包月</string>
+    <string name="open_monthly">开通包月</string>
+    <string name="sign_in_rules">签到奖励规则</string>
+    <string name="free">免费</string>
+
+    <string name="privacy_policy">隐私策略</string>
+    <string name="terms_service">服务条款</string>
+    <string name="all_comments">全部评论</string>
+
+    <string name="comment_on_details">评论详情</string>
+    <string name="publish_comment">发表评论</string>
+    <string name="experience_immediately">立即体验</string>
+    <string name="my_bookshelf">我的书架</string>
+    <string name="select">精选</string>
+    <string name="boy">男生</string>
+    <string name="girl">女生</string>
+    <string name="ranking">排行</string>
+
+    <string name="fan_list">粉丝榜</string>
+    <string name="fans_rules">粉丝规则</string>
+    <string name="login_in">进入主页</string>
+    <string name="bind_phone_number">绑定手机号</string>
+    <string name="reading_preferences">阅读偏好设置</string>
+
+    <string name="to_report">举报</string>
+
+    <string name="mt_placed_top">置顶</string>
+    <string name="mt_placed_top_success">置顶成功</string>
+    <string name="cancel_mt_placed_top">取消置顶</string>
+    <string name="cancel_mt_placed_top_success">取消置顶成功</string>
+
+    <string name="mt_banned">禁言</string>
+    <string name="cancel_mt_banned">取消禁言</string>
+    <string name="mt_banned_success">禁言成功</string>
+    <string name="cancel_mt_banned_success">取消禁言成功</string>
+
+    <string name="published">发表</string>
+    <string name="directory">目录</string>
+    <string name="activity_rules">活动规则</string>
+    <string name="feedback">意见反馈</string>
+    <string name="help">帮助</string>
+    <string name="feed_back">反馈</string>
+    <string name="signed_in_label">正在签到</string>
+
+    <string name="request_timed_out">请求超时！</string>
+    <string name="please_update_version">版本异常，请更新版本！</string>
+    <string name="again_login_in">用户异常，请重新登录！</string>
+    <string name="signature_error">签名错误！</string>
+    <string name="please_login">请先登录！</string>
+    <string name="login_expired">登录已过期，请重新登录！</string>
+    <string name="server_exception">服务器异常 ：</string>
+
+
+    <string name="entries_yet">该榜单下还没有作品入围呢~</string>
+    <string name="reverse_order">倒序</string>
+    <string name="positive_sequence">正序</string>
+
+    <string name="book_marks">共%d个书签</string>
+
+
+
+    <string name="buy_success">购买成功！</string>
+    <string name="buging">正在购买···</string>
+    <string name="buy_more">购买多章</string>
+    <string name="batch_bug">批量购买</string>
+
+    <string name="cache">缓存</string>
+    <string name="cache_readable_chapters">缓存全部可读章节</string>
+    <string name="is_the_cache">正在缓存</string>
+    <string name="start_cache">开始缓存</string>
+    <string name="last_chapter">已经是最后一章了！</string>
+    <string name="first_chapter">已经是第一章了</string>
+    <string name="book_mark_successfully">添加书签成功</string>
+    <string name="bookmark_deleted_successfully">删除书签成功</string>
+    <string name="label">书签</string>
+
+    <string name="signed_in">加入书架成功</string>
+    <string name="shelves_for_almost">书架快满了，注意清理书架哟！</string>
+    <string name="bookcase_is_full">书架已满，请先清理书架哟！</string>
+    <string name="cache_success">缓存成功</string>
+    <string name="purchase_failed">购买失败</string>
+    <string name="purchase_success">购买成功</string>
+    <string name="buying_chapter">正在购买第%d章</string>
+    <string name="query_failed_change">后台是否修改章节查询失败</string>
+    <string name="buging_to">购买中···</string>
+    <string name="monthly_success">包月成功</string>
+    <string name="buy_fail">支付失败</string>
+    <string name="top_up_success">充值成功</string>
+    <string name="top_up_fail">充值失败</string>
+    <string name="version">版本%s</string>
+    <string name="set_success">设置成功</string>
+    <string name="maximum_word">最多输入3000个字哦 o(╯□╰)o </string>
+
+    <string name="please_enter_feedback">请输入反馈内容</string>
+    <string name="is_submitted">正在提交</string>
+    <string name="feedback_success">反馈成功</string>
+    <string name="mailbox_copied">邮箱已复制，发送邮件加入我们~</string>
+    <string name="looking_forward_join">／我们期待你的加入／</string>
+    <string name="choose_apply">选择应用</string>
+    <string name="collect_bookshelf">赶快收藏作品到书架吧！</string>
+    <string name="seting">正在设置···</string>
+    <string name="cleaned_up">已经清理干净啦！</string>
+
+    <string name="load_off">退出登录</string>
+    <string name="loading_off">正在退出登录</string>
+    <string name="cleaning">正在清理···</string>
+    <string name="clean_success">清理成功！</string>
+    <string name="request_failed">签到数据请求失败</string>
+
+    <string name="series_completed">该系列任务已全部完成了呢~</string>
+
+    <string name="collecting">正在领取···</string>
+    <string name="congratulations_success">恭喜您领取成功</string>
+    <string name="choose_your_reading">选择您的阅读便好，我们将为您推荐最合适的作品</string>
+    <string name="taking_pictures">拍照</string>
+    <string name="celect_from_album">从相册选择</string>
+
+    <string name="boy_n">男</string>
+    <string name="girl_n">女</string>
+    <string name="enter_exchange_code">请输入兑换码</string>
+
+    <string name="personal_particulars_unchanged">个人资料未变化</string>
+    <string name="photo_uploading">头像上传中</string>
+    <string name="info_update">信息修改中</string>
+    <string name="updata_success">修改成功</string>
+    <string name="upload_success">上传成功</string>
+    <string name="upload_fail">上传失败</string>
+    <string name="secret">保密</string>
+    <string name="names_cannot_empty">昵称不能为空！</string>
+    <string name="names_cannot_special_symbols">昵称不能包含特殊符号！</string>
+    <string name="refused_camera">您已拒绝应用使用照相机！</string>
+    <string name="looking_forward_comments">期待您的精彩评论~</string>
+    <string name="reply">回复~</string>
+    <string name="like">喜欢~</string>
+    <string name="book_review">书评~</string>
+    <string name="teasing_dian">吐槽“</string>
+    <string name="teasing">吐槽</string>
+    <string name="cancel_success">取消成功</string>
+    <string name="give_like_success">点赞成功</string>
+    <string name="looking_wonderful_comments">期待你的精彩评论，让更多的人看到~</string>
+
+    <string name="look_all">查看全部%d条回复></string>
+    <string name="serial">连载</string>
+    <string name="the_end">完结</string>
+    <string name="totil_chapter">共%d章</string>
+    <string name="this_work_noyet">这部作品下还没有粉丝呢~</string>
+    <string name="fan_value">粉丝值：%s</string>
+    <string name="input_content">请输入评论内容</string>
+    <string name="statement">发表中...</string>
+
+
+    <string name="added">已添加</string>
+    <string name="add_bookcase">加书架</string>
+    <string name="interactive"> 互动%s</string>
+    <string name="interactive_null"> 互动%s</string>
+    <string name="zi"> %s字</string>
+    <string name="has_finished">已完结</string>
+    <string name="just">刚刚</string>
+    <string name="minutes_ago">分钟前</string>
+    <string name="hours_before">小时前</string>
+    <string name="in_the_serial">连载中</string>
+    <string name="monthly">包月</string>
+    <string name="limit_free">限免</string>
+    <string name="fold">%d折</string>
+    <string name="limited_time_free">限时免费：%d天 %02d:%02d:%02d</string>
+    <string name="timed_specials">限时特价：%d天 %02d:%02d:%02d</string>
+    <string name="monthly_day"> 包月：%d天 %02d:%02d:%02d</string>
+
+    <string name="bookshelf_added_successfully">加书架成功</string>
+    <string name="tourists">游客</string>
+    <string name="to_prepaid_phone">去充值</string>
+    <string name="close_all">全部关闭</string>
+    <string name="all_open">全部开启</string>
+    <string name="choose_your_like">选择你喜欢的，让我更懂你</string>
+    <string name="three_thousand">0/3000</string>
+    <string name="authors_contact_official">仅限作者联系官方投稿使用</string>
+    <string name="level_growth">成长等级</string>
+
+    <string name="vip_level">VIP等级</string>
+    <string name="book_grade">给本书打个分吧</string>
+    <string name="author_easy">作者码字不容易，写条评论温暖作者...</string>
+
+    <string name="author_working_draft">作者大大正在赶稿中</string>
+    <string name="author_encouragement">来给作者一个鼓励吧～</string>
+    <string name="good_book_recommend">好书推荐</string>
+    <string name="same_kind_book">同类热门好书</string>
+
+    <string name="good_book_free">免费好书</string>
+
+    <string name="hot_search_term">热搜词</string>
+    <string name="change">换一换</string>
+    <string name="hot_search_books">热搜书籍</string>
+    <string name="search_history">搜索历史</string>
+    <string name="book_notifications_updates">书籍更新推送通知</string>
+    <string name="book_automatic_management">书籍自动购买管理</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="modification_personal_data">修改个人资料</string>
+    <string name="recommend_friend">推荐给朋友</string>
+
+    <string name="editing_shared_content">编辑分享内容</string>
+    <string name="follow_account">关注官方微博</string>
+    <string name="send">发送</string>
+    <string name="click_write_chapter_comment">点此写下对本章的吐槽</string>
+    <string name="write_chapter_comment">写下对本章的吐槽</string>
+    <string name="why_need_permission">为什么需要这个权限？</string>
+
+    <string name="is_open_notify">您刚加入了作品到书架，是否开启作品更新通知？</string>
+    <string name="empty_bookshelf_fill">空荡荡的书架等你来填满！！！</string>
+
+    <string name="find_good_book">找好书，去【精选】逛逛</string>
+    <string name="search_what">您要搜点儿什么</string>
+
+    <string name="thanks_encouragement">谢谢小主的鼓励～</string>
+    <string name="fantastic_book">这本书超级精彩，一起来支持吧！</string>
+    <string name="is_like_thsbook">喜欢这本书吗？打赏支持一下吧～</string>
+    <string name="balance">余额：</string>
+    <string name="custom_tip">自定义打赏</string>
+    <string name="input_money">请输入打赏金额</string>
+    <string name="money">金额</string>
+
+
+    <string name="the_previous_chapter">上一章</string>
+
+    <string name="the_next_chapter">下一章</string>
+
+    <string name="reading_set">阅读设置</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="shop_name">字号</string>
+    <string name="screen_brightness">屏幕亮度</string>
+    <string name="flip_effect">翻页效果</string>
+    <string name="format">版式</string>
+    <string name="theme">主题</string>
+    <string name="simulation">仿真</string>
+    <string name="cover">覆盖</string>
+    <string name="translation">平移</string>
+    <string name="system_reading_progress">系统检测到您当前阅读进度</string>
+    <string name="exceptional">打赏</string>
+    <string name="automatically_next_chapter">自动购买下一章</string>
+    <string name="poking_switch">吐槽开关</string>
+    <string name="introduction">作品简介</string>
+    <string name="cache_all_readable_chapters">缓存全部可读章节</string>
+
+    <string name="there_no_data">这里什么都没有 o(╯□╰)o </string>
+    <string name="eceiving_books_beans">恭喜你已领取50书豆！</string>
+    <string name="fifty_book_beans">50书豆</string>
+
+    <string name="wedding_package">恭喜你有新人礼包可领取哦！</string>
+    <string name="would_add_bookshelf">是否将本作品添加到书架?</string>
+    <string name="sign_rules">签到奖励</string>
+    <string name="top_up_award">充值奖励</string>
+    <string name="custom">自定义</string>
+    <string name="girl_novel">女生小说</string>
+    <string name="bestsellers">畅销榜</string>
+    <string name="subscription_book_currency">书币订阅</string>
+    <string name="write_comment">写评论</string>
+
+    <string name="quckly_write_comment">快来写评论吧～</string>
+    <string name="look_all_comment">查看全部书评 ></string>
+    <string name="wonderful_comments">期待你的精彩评论，让更多人看到</string>
+    <string name="its_hot">同类热门</string>
+    <string name="book_friends_like">书友还喜欢</string>
+
+
+
+    <string name="exchange">兑换</string>
+    <string name="warm_tips">温馨提示：</string>
+
+    <string name="exchange_hint1">1、兑换码是通过参加活动或者市场渠道的推广活动获得的书豆兑换码。</string>
+    <string name="exchange_hint2">2、兑换码兑换后，即可获得对应的书豆，可以在个人中心【我的账户】—【我的书豆】查看</string>
+    <string name="book_bean_available">可用书豆：</string>
+    <string name="book_bean_instructions">书豆说明？</string>
+
+    <string name="code_for_books_beans">兑换码兑换书豆</string>
+    <string name="view_books_beans">查看已失效的书豆</string>
+    <string name="person_photo">头像</string>
+    <string name="name">昵称</string>
+
+    <string name="sex">性别</string>
+    <string name="birthday">生日</string>
+    <string name="person_info">个人简介</string>
+    <string name="sure_update">确认修改</string>
+
+    <string name="leave_information">请请留下你的联系方式</string>
+    <string name="sms_cskh">Vui lòng liên hệ CSKH ：0396596313</string>
+    <string name="home_into_book">首页进入书城，刷新内容并浏览即可完成任务。首页进入书城，刷新内容并浏览即可完成任务。</string>
+
+    <string name="login_hint">小说宝库，丰富精彩</string>
+    <string name="boyi_facebook">登陆 Facebook</string>
+    <string name="boyi_google">登陆 Google</string>
+
+    <string name="no_recharge">您还没有充值呢~</string>
+    <string name="no_consume">您还没有任何消费呢~</string>
+    <string name="and"> 及 </string>
+    <string name="no_lookbook_record">什么记录都没有，快去看书吧~</string>
+
+
+    <string name="balance_payments">Số tiền thanh toán:</string>
+    <string name="payment_details">Hãy kiểm tra chính xác số tiền thanh toán,vui lòng nạp số tiền thanh toán này qua MOMO.</string>
+    <string name="copy">copy</string>
+    <string name="go_momo_pay">Vào APP MOMO để thanh toán </string>
+    <string name="momo_doc">MOMO</string>
+    <string name="momo_title">Xác nhận đơn hàng</string>
+
+
+    <string name="content_loading">章节内容加载中···</string>
+    <string name="loading">加载中</string>
+
+    <string name="network_on_strike">网络罢工了~，尝试重新加载吧</string>
+    <string name="reload_the">重新加载</string>
+    <string name="loading_fail">加载失败</string>
+    <string name="please_login_first">该章节为付费章节，请您先登录</string>
+    <string name="go_login">去登录</string>
+    <string name="no_login">未登录</string>
+    <string name="current_balance">目前您的余额：</string>
+    <string name="balance_insufficient">余额不足，请充值后阅读</string>
+    <string name="buy_whole_book">购买整本：%d%s</string>
+    <string name="buy_whole_chapter">购买本章：%d%s"</string>
+    <string name="buy_more_chapter">购买多章</string>
+    <string name="whole_book_price">整本价格：%d书币</string>
+    <string name="whole_chapter_price">单章价格：%d书币</string>
+    <string name="no_bug">未购买</string>
+    <string name="poking_fun">吐槽一下</string>
+    <string name="n_poking">个吐槽</string>
+    <string name="paid_chapter">本章为付费章节</string>
+    <string name="after_purchase_can">购买后可继续阅读，感谢您对正版的支持</string>
+    <string name="after_purchase_can_two"> </string>
+    <string name="section_buy_automatically">遇到收费章节自动购买</string>
+    <string name="current_balance_s">目前您的余额：%d书币 %d书豆</string>
+
+    <string name="detail_rewarding">打赏中···</string>
+
+    <string name="remaining_beans">剩余：%d书豆</string>
+    <string name="ridicule_success">吐槽成功！</string>
+    <string name="making_what">你想吐槽些什么</string>
+    <string name="sending">正在发送···</string>
+    <string name="published_success">发表成功</string>
+    <string name="get_in">领取中···</string>
+
+    <string name="login_seccess">登录成功</string>
+    <string name="geting_info">正在获取用户信息</string>
+    <string name="clean_all">已清空!</string>
+
+    <string name="net_connected_properly">请检查网络是否能正常连接</string>
+    <string name="click_retry">点击重试</string>
+    <string name="no_you_like">没有收到您要的~</string>
+    <string name="official_contact">  Vui lòng liên hệ với chúng tôi: noveltok.qa@gmail.com</string>
+    <string name="page_one">已经是第一页了</string>
+    <string name="no_your_requirements">没有符合您条件的作品呢~</string>
+    <string name="author_greatly">作品已完结~</string>
+    <string name="no_read_chapter">未阅读／%d章</string>
+    <string name="readed_chapter">已读：%d章／%d章</string>
+    <string name="click">点击）</string>
+    <string name="wan">万</string>
+    <string name="yi">亿</string>
+    <string name="cleaning_empty">正在清空···</string>
+    <string name="day_ago">天前</string>
+    <string name="money_ago">个月前</string>
+    <string name="search_keyword">请输入搜索关键字</string>
+    <string name="searching">正在搜索</string>
+
+    <string name="infringement">侵权</string>
+    <string name="personal_attack">人身攻击</string>
+    <string name="advertising">广告</string>
+    <string name="pornographic">淫秽色情</string>
+    <string name="sensitive">敏感</string>
+    <string name="no_system_messages">还没有系统消息</string>
+    <string name="copy_success">复制成功</string>
+    <string name="deleting">正在删除</string>
+    <string name="delete_success">删除成功</string>
+    <string name="least_dollars_required">最少要打赏50书币哦~</string>
+    <string name="momo_pay">去支付</string>
+
+    <string name="welcome">Mở ra thế giới đọc sách</string>
+
+    <string name="report_success">举报成功</string>
+    <string name="report_empty">举报内容为空!</string>
+
+    <string name="pay_upload">支付中</string>
+    <string name="ng_pay_success">充值成功，请稍等</string>
+    <string name="pull_on_loading">上拉加载</string>
+    <string name="loosen_the_load">松开加载</string>
+    <string name="being_loaded">正在加载</string>
+    <string name="pull_loaded">加载完成</string>
+    <string name="pay_is_success">请到“我的账户”检查是否充值成功</string>
+    <string name="com.crashlytics.useFirebaseAppId">true</string>
+
+    <!-- bganLuong支付-->
+    <string name="dialog_close">Đóng</string>
+
+    <string name="session_timeout">Session timeout</string>
+    <string name="txtSendOrder">SendOrder</string>
+    <string name="txtCheckOrder">CheckOrder</string>
+
+    <string name="txtNameOrder">Họ tên người thanh toán</string>
+    <string name="txtDescription">Mô tả</string>
+    <string name="txtEmail">Email người thanh toán</string>
+    <string name="txtMobile">Số điện thoại người thanh toán</string>
+    <string name="txtAddress">Địa chỉ người thanh toán</string>
+    <string name="txtAmount">Tổng số tiền đơn hàng cần thanh toán</string>
+
+    <string name="error_disconnect">Bạn cần kết nối internet</string>
+    <string name="error_name_order">Bạn cần nhập họ tên người thanh toán</string>
+    <string name="error_description">Bạn cần nhập mô tả</string>
+    <string name="error_email">Bạn cần nhập email người thanh toán</string>
+    <string name="error_mobile">Bạn cần nhập số điện thoại người thanh toán</string>
+    <string name="error_address">Bạn cần nhập địa chỉ người thanh toán</string>
+    <string name="error_amount">Bạn cần nhập số tiền đơn hàng cần thanh toán. Số tiền phải lớn hơn 2000VND</string>
+
+    <string name="error_01">Lỗi không xác định</string>
+    <string name="error_02">merchant_id không tồn tại</string>
+    <string name="error_04">checksum không đúng</string>
+    <string name="error_05">Không ghi nhận được đơn hàng trên cổng thanh toán</string>
+    <string name="error_06">token_code không tồn tại hoặc không hợp lệ</string>
+    <string name="error_07">Đơn hàng chưa được thanh toán</string>
+    <string name="error_09">receiver_email không tồn tại</string>
+    <string name="error_11">receiver_email đang bị khóa hoặc phong tỏa không thể giao dịch</string>
+    <string name="error_20">function không đúng</string>
+    <string name="error_21">version không đúng hoặc không tồn tại</string>
+    <string name="error_22">Thiếu tham số đầu vào</string>
+    <string name="error_23">order_code mã đơn hàng không hợp lệ</string>
+    <string name="error_24">total_amount không hợp lệ</string>
+    <string name="error_25">currency không hợp lệ</string>
+    <string name="error_26">language không hợp lệ</string>
+    <string name="error_27">return_url không hợp lệ</string>
+    <string name="error_28">cancel_url không hợp lệ</string>
+    <string name="error_29">notify_url không hợp lệ</string>
+    <string name="error_30">buyer_fullname không hợp lệ</string>
+    <string name="error_31">buyer_email không hợp lệ</string>
+    <string name="error_32">buyer_mobile không hợp lệ</string>
+    <string name="error_33">buyer_address không hợp lệ</string>
+
+
+    <string name="sms_phone">Gửi SMS tới&#8194; </string>
+    <string name="sms_copy_content">Copy cú pháp SMS</string>
+    <string name="sms_pay_send">Hoàn thành gửi SMS tới nhà mạng</string>
+
+    <string name="card_seri">Vui lòng nhập mã số Seri</string>
+    <string name="card_code">Vui lòng nhập mã thẻ cào</string>
+    <string name="card_amount">Vui lòng nhập số tiền</string>
+    <string name="card_type">Vui lòng chọn loại thẻ</string>
+    <string name="send_order">Nạp tiền</string>
+    <string name="vmg_momo_hint">Lưu ý: Khi thanh toán bằng MOMO,số tiền nạp phải giống với số tiền đã nêu trên, nếu không giống nhau, nạp tiền sẽ không thành công, nếu nạp tiền không thành công, vui lòng liên hệ với chúng tôi:noveltok.qa@gmail.com</string>
+    <string name="momo_pay_hint"> Nếu nạp tiền thành công, vui lòng làm mới trang “Của tôi”để kiểm tra số Xu</string>
+    <string name="card">Thẻ cào</string>
+    <string name="nganluong">Ngân Lượng</string>
+    <string name="refused_sms">Vui lòng mở quyền SMS</string>
+    <string name="appID">4414017142673015921</string>
+</resources>

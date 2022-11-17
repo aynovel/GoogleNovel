@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_white_corner_10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="105dp"
+            android:layout_height="105dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/rhare_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="@string/thanks_encouragement"
+            android:textColor="@color/dark_2_color"
+            android:textSize="18sp" />
+
+        <View
+            style="@style/common_horizontal_line"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="18dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/cover"
+                android:layout_width="60dp"
+                android:layout_height="80dp"
+                android:background="@drawable/book_shelf_item_shadow"
+                android:src="@drawable/default_work_cover" />
+
+            <TextView
+                android:id="@+id/reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toRightOf="@id/cover"
+                android:textColor="@color/dark_2_color"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/reward"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="6dp"
+                android:layout_toRightOf="@id/cover"
+                android:ellipsize="end"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:text="@string/fantastic_book"
+                android:textColor="@color/gray_1_color"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                style="@style/common_horizontal_line"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@android:color/white"
+                android:text="　分享至　"
+                android:textColor="@color/gray_1_color"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:paddingBottom="20dp">
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/wechat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:gravity="center_horizontal"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/wechatCircle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/qq"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/q_icon_b"
+                android:gravity="center_horizontal"
+                android:text="QQ"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/qzone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/icon_b"
+                android:gravity="center_horizontal"
+                android:text="空间"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/sina"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableTop="@drawable/con_b"
+                android:gravity="center_horizontal"
+                android:text="微博"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/close"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="26dp"
+        android:src="@drawable/ard_shar" />
+
+</FrameLayout>

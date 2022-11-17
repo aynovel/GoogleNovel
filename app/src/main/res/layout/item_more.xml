@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bg"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/more_chapter_no_select">
+
+        <TextView
+            android:id="@+id/tv_chapters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="16dp"
+            tools:text="asdasdasd"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_prace"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="16dp"
+            android:textColor="@color/color_333333"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+    <TextView
+        android:layout_width="63dp"
+        android:layout_height="20dp"
+        android:layout_marginRight="7dp"
+        android:background="@drawable/shape_sale_01c5a7_80dp"
+        android:textColor="@color/color_FFFFFF"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="12sp"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>
+

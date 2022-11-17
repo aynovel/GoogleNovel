@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/icon_nodate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/empty_bookshelf_fill"
+        android:textColor="@color/gray_1_color"
+        android:textSize="15sp" />
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/visitStore"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_red_corner_5dp"
+        android:gravity="center"
+        android:visibility="gone"
+        android:text="@string/find_good_book"
+        android:textColor="@android:color/white"
+        android:textSize="14sp" />
+
+</LinearLayout>

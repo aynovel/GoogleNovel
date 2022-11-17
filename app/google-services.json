@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "658116322117",
+    "firebase_url": "https://novelclub-23a44.firebaseio.com",
+    "project_id": "novelclub-23a44",
+    "storage_bucket": "novelclub-23a44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:658116322117:android:3e6d3611a3d3e70c43142c",
+        "android_client_info": {
+          "package_name": "life.forever.cf"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "658116322117-ijrud77nvjcn1io9gis95orebo4ba6fm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "life.forever.cf",
+            "certificate_hash": "157109adb67f27e53068e83e54d1067b77dcd69e"
+          }
+        },
+        {
+          "client_id": "658116322117-dh60d2h3u18r3gp7ho1jq589tvfma1f9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAj5mozHhKLGu2HDsEpmtur6jHv6GnowL8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "658116322117-nbfr3tfqqv1ln9hiook6mi05qfdqud6v.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

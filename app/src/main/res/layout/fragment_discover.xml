@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_00000000"
+    android:descendantFocusability="blocksDescendants"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_00000000"
+        tools:ignore="UselessParent">
+
+
+        <life.forever.cf.publics.fresh.weight.PullRefreshLayout
+            android:id="@+id/refreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_00000000">
+
+            <life.forever.cf.publics.fresh.FeaturedRefreshHeaderView
+                android:id="@+id/refreshHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_00000000"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcv_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/color_00000000"
+                android:overScrollMode="never"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:orientation="vertical" />
+        </life.forever.cf.publics.fresh.weight.PullRefreshLayout>
+
+        <include
+            android:id="@+id/noneView"
+            layout="@layout/layout_shelf_is_empty"
+            android:visibility="gone" />
+    </FrameLayout>
+</RelativeLayout>

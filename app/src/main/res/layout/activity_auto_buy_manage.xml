@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/color_FEFFFF">
+
+    <RelativeLayout
+        android:id="@+id/ll_notify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="21dp"
+            android:layout_height="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:src="@drawable/ic_lingdang"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_000001"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:text="@string/push_update_noti"
+            android:layout_toRightOf="@+id/imgIcon"/>
+
+        <life.forever.cf.publics.weight.TaskCheckBox
+            android:id="@+id/cbCardRemind"
+            android:layout_width="39dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="21dp"
+            android:background="@drawable/selector_boyi_switch_orange"
+            android:button="@null" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/imgMask"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/color_69FFFFFF" />
+
+    </RelativeLayout>
+
+
+    <View style="@style/common_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/closeAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/close_all"
+            android:textColor="@color/selector_enable_red_gray"
+            android:textSize="16sp" />
+
+        <View style="@style/common_vertical_line" />
+
+        <TextView
+            android:id="@+id/openAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/all_open"
+            android:textColor="@color/selector_enable_red_gray"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

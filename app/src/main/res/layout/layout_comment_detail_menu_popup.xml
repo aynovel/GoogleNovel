@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/wechat"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/wechatCircle"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/qq"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/q_icon_b"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="QQ"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/qzone"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/icon_b"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="空间"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/sina"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/con_b"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="微博"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:drawablePadding="8dp"
+                android:drawableTop="@drawable/ghgh"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="复制链接"
+                android:textColor="@color/gray_1_color"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <View style="@style/common_horizontal_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <life.forever.cf.publics.weight.viewtext.MagnetTextView
+            android:id="@+id/delete"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/hhdfaasd"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/aiye_delete"
+            android:textColor="@color/gray_1_color"
+            android:textSize="10sp" />
+
+        <life.forever.cf.publics.weight.viewtext.MagnetTextView
+            android:id="@+id/report"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/epor"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/to_report"
+            android:textColor="@color/gray_1_color"
+            android:textSize="10sp" />
+
+        <life.forever.cf.publics.weight.viewtext.MagnetTextView
+            android:id="@+id/mt_placed_top"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/placed_top"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/mt_placed_top"
+            android:textColor="@color/gray_1_color"
+            android:textSize="10sp" />
+
+        <life.forever.cf.publics.weight.viewtext.MagnetTextView
+            android:id="@+id/mt_banned"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="8dp"
+            android:drawableTop="@drawable/banned"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/mt_banned"
+            android:textColor="@color/gray_1_color"
+            android:textSize="10sp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

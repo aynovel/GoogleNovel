@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/headItem"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="25dp"
+        android:gravity="center_horizontal">
+
+        <life.forever.cf.publics.weight.RadiusImageView
+            android:id="@+id/head"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/default_user_logo"
+            app:border_color="@color/gray_4_color"
+            app:border_width="1dp"
+            app:is_circle="true" />
+
+        <ImageView
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_alignEnd="@id/head"
+            android:layout_alignBottom="@id/head"
+            android:src="@drawable/icon_camera"
+            tools:ignore="ContentDescription" />
+    </RelativeLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/name"
+            android:textColor="@color/dark_2_color"
+            android:textSize="15sp" />
+
+        <!--<EditText
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="User name"
+            android:textColor="@color/color_9D9D9F"
+            android:textSize="15sp"
+            android:background="@null" />-->
+
+
+        <EditText
+            android:id="@+id/nickName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:hint="@string/name_hint"
+            android:maxLength="20"
+            android:gravity="right"
+            android:background="@null"
+            android:textColor="@color/color_9D9D9F"
+            android:textSize="15sp"
+            android:importantForAutofill="no"
+            tools:ignore="LabelFor,RelativeOverlap,RtlHardcoded,TextFields" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/sexItem"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/sex"
+            android:textColor="@color/dark_2_color"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <View
+            android:id="@+id/arrow1"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pop" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/arrow1"
+            android:textColor="@color/color_9D9D9F"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/birthdayItem"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/birthday"
+            android:textColor="@color/dark_2_color"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+        <View
+            android:id="@+id/arrow2"
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pop" />
+
+        <TextView
+            android:id="@+id/birthday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toStartOf="@id/arrow2"
+            android:textColor="@color/color_9D9D9F"
+            android:textSize="15sp"
+            tools:ignore="RelativeOverlap" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:visibility="gone"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/person_info"
+                android:textColor="@color/dark_2_color"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:ellipsize="end"
+                android:maxWidth="300dp"
+                android:maxLines="1"
+                android:textColor="@color/gray_1_color"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="13dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/pop" />
+
+    </RelativeLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:visibility="gone"
+        android:layout_marginRight="15dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="@string/sure_update"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

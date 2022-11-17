@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/book_money"
+                android:textColor="@color/dark_4_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/dark_2_color"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bean"
+                android:textColor="@color/dark_4_color"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/voucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/dark_2_color"
+                android:textSize="30sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/recharge"
+        android:layout_width="185dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/shape_red_corner_5dp"
+        android:gravity="center"
+        android:text="@string/to_prepaid_phone"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/gray_4_color" />
+
+    <life.forever.cf.publics.weight.KOL
+        android:id="@+id/voucherItem"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:itemIcon="@drawable/count"
+        app:itemTitle="@string/my_book_bean"
+        app:paddingLeft="18dp"
+        app:paddingRight="18dp" />
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <life.forever.cf.publics.weight.KOL
+        android:id="@+id/rechargeItem"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:itemIcon="@drawable/ount"
+        app:itemTitle="@string/prepaid_records"
+        app:paddingLeft="18dp"
+        app:paddingRight="18dp" />
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+    <life.forever.cf.publics.weight.KOL
+        android:id="@+id/consumeItem"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        app:itemIcon="@drawable/ewar"
+        app:itemTitle="@string/consumption_records"
+        app:paddingLeft="18dp"
+        app:paddingRight="18dp" />
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp" />
+
+</LinearLayout>

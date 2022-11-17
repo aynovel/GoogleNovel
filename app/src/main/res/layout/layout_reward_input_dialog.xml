@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/shape_gray_corner_10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal|bottom"
+            android:text="@string/custom_tip"
+            android:textColor="@color/dark_2_color"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/money"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/shape_white_corner_5dp_gray_border"
+            android:gravity="center"
+            android:hint="@string/input_money"
+            android:inputType="number"
+            android:textColor="@color/dark_2_color"
+            android:textSize="15sp" />
+
+        <View
+            style="@style/common_horizontal_line"
+            android:background="@color/gray_3_color" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:orientation="horizontal">
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/cancel"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/aiye_cancel"
+                android:textColor="@color/dark_2_color"
+                android:textSize="15sp" />
+
+            <View
+                style="@style/common_vertical_line"
+                android:background="@color/gray_3_color" />
+
+            <life.forever.cf.publics.weight.viewtext.MagnetTextView
+                android:id="@+id/complete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/aiye_send_out"
+                android:textColor="@color/theme_color"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

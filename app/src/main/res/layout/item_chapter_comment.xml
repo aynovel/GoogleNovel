@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_list_selector"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <life.forever.cf.publics.weight.RadiusImageView
+            android:id="@+id/head"
+            android:layout_width="43dp"
+            android:layout_height="43dp"
+            android:src="@drawable/default_user_logo"
+            app:border_color="@color/gray_4_color"
+            app:border_width="1dp"
+            app:is_circle="true" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:text="伊人兮在水一方"
+                android:textColor="@color/dark_2_color"
+                android:textSize="14sp" />
+
+            <life.forever.cf.publics.weight.LevelView
+                android:id="@+id/level"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="LV1"
+                android:textSize="8sp" />
+
+            <life.forever.cf.publics.weight.LevelView
+                android:id="@+id/fansLevel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:text="LV1"
+                android:textSize="8sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <life.forever.cf.publics.weight.viewtext.FixedTextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="2"
+        android:text="我去哭了一下下再过来，你们信吗？谢谢你们一直以为的陪伴，鼓励和体谅，也谢谢你们每一条评论每一份打赏，谢谢猫豆和猫球的守"
+        android:textColor="@color/gray_1_color"
+        android:textSize="15sp" />
+
+</LinearLayout>

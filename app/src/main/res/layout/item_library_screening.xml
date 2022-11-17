@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:background="@drawable/selector_library_screening_item"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        android:gravity="center"
+        android:text="东方玄幻"
+        android:textColor="@color/selector_check_red_black"
+        android:textSize="12sp" />
+
+</FrameLayout>

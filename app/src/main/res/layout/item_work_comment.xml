@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/selector_list_selector"
+    android:orientation="vertical"
+    android:paddingTop="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp">
+
+        <life.forever.cf.publics.weight.RadiusImageView
+            android:id="@+id/head"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/default_user_logo"
+            app:border_color="@color/gray_4_color"
+            app:border_width="1dp"
+            app:is_circle="true" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/head"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxWidth="150dp"
+                    android:maxLines="1"
+                    android:text="伊人兮在水一方人兮在水一方"
+                    android:textColor="@color/color_1F1F1F"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <life.forever.cf.publics.weight.LevelView
+                    android:id="@+id/fansLevel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:text="LV1"
+                    android:textSize="8sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/iv_start"
+                    android:layout_width="66dp"
+                    android:layout_height="17dp"
+                    android:layout_marginLeft="8dp"
+                    android:background="@drawable/button_bg_author"
+                    android:textSize="12sp"
+                    android:text="@string/auther"
+                    android:textColor="@color/color_FFFFFF"
+                    android:visibility="visible" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <life.forever.cf.sql.NiceRatingBar
+            android:id="@+id/score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            app:nrb_starTotal="5"
+            app:nrb_starImageWidth="12dp"
+            app:nrb_starImageHeight="12dp"
+            app:nrb_starFullResource="@drawable/five_pointed_star_big"
+            app:nrb_starEmptyResource="@drawable/five_star_empty_big"
+            app:nrb_starHalfResource="@drawable/half_five_star_big"
+            app:nrb_ratingStatus="Disable"
+            app:nrb_starImagePadding="4dp"/>
+        <!--        <View-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="0dp"-->
+        <!--            android:layout_weight="1" />-->
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/reward"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/reward_value"
+        android:textColor="@color/color_F89F5E"
+        android:textSize="14sp"
+        android:visibility="visible" />
+
+    <life.forever.cf.publics.weight.viewtext.FixedTextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginRight="16dp"
+        android:ellipsize="end"
+        android:lineSpacingExtra="5dp"
+        android:maxLines="3"
+        tools:text="我去哭了一下下再过来，你们信吗？谢谢你们一直以为的陪伴，鼓励和体谅，也谢谢你们每一条评论每一份打赏，谢谢猫豆和猫球的守"
+        android:textColor="@color/color_666666"
+        android:textSize="14sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="56dp"
+            android:layout_marginTop="3dp"
+            android:text="5天前"
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/ll_likeCount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:layout_toLeftOf="@+id/ll_replyCount"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/iv_likeCount"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/praise" />
+
+            <TextView
+                android:id="@+id/likeCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="5dp"
+                android:text="4"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/ll_replyCount"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@+id/replyCount"
+                android:src="@drawable/comment_reply" />
+
+            <TextView
+                android:id="@+id/replyCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingLeft="5dp"
+                android:text="4"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/replyLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/gray_4_color"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <life.forever.cf.publics.weight.WrapListView
+            android:id="@+id/replyList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:listSelector="@drawable/selector_list_selector"
+            android:paddingBottom="10dp" />
+
+        <TextView
+            android:id="@+id/checkAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/color_F89F5E"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+    <View
+        style="@style/common_horizontal_line"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

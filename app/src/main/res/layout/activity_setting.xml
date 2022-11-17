@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <life.forever.cf.publics.weight.KOL
+        android:id="@+id/pushManageItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:itemTitle="@string/book_notifications_updates"
+        app:itemType="tip" />
+
+    <View style="@style/common_horizontal_line" />
+
+    <life.forever.cf.publics.weight.KOL
+        android:id="@+id/clearMemoryItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        app:itemTitle="@string/clear_cache"
+        app:itemType="tip" />
+
+    <View style="@style/common_horizontal_line" />
+
+
+    <LinearLayout
+        android:id="@+id/rateUsItem"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:visibility="gone"
+        android:background="@color/colorWhite"
+        android:baselineAligned="false"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:paddingStart="16dp"
+                android:text="@string/rate_us"
+                android:textColor="@color/color_1F1F1F"
+                android:textSize="15sp"
+                tools:ignore="RtlSymmetry" />
+
+            <View
+                android:id="@+id/v_reddot"
+                android:layout_width="6dp"
+                android:layout_height="6dp"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="10dp"
+                android:visibility="gone"
+                android:background="@drawable/icon_red_dot" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginEnd="16dp"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:layout_width="13dp"
+                android:layout_height="13dp"
+                android:src="@drawable/pop"
+                tools:ignore="ContentDescription" />
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View style="@style/common_horizontal_line"
+        android:visibility="gone"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/logOut"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/button_bg"
+        android:gravity="center"
+        android:text="@string/load_off"
+        android:textColor="#FFFFFFFF"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,41 @@
+<paths>
+    <external-path
+        name="external"
+        path="." />
+    <external-path
+        name="external_files"
+        path="." />
+    <external-path
+        name="tt_external_download"
+        path="Download" />
+    <external-files-path
+        name="tt_external_files_download"
+        path="Download" />
+    <external-files-path
+        name="external_files_path"
+        path="Download" />
+    <files-path
+        name="tt_internal_file_download"
+        path="Download" />
+    <cache-path
+        name="tt_internal_cache_download"
+        path="Download" />
+    <external-cache-path
+        name="gdt_sdk_download_path1"
+        path="com_qq_e_download" />
+    <cache-path
+        name="gdt_sdk_download_path2"
+        path="com_qq_e_download" />
+    <external-cache-path
+        name="SigMob_root"
+        path="SigDownload" />
+    <external-path
+        name="SigMob_root_external"
+        path="." />
+    <root-path
+        name="SigMob_root"
+        path="." />
+    <files-path
+        name="IFly_AD_Download_Path"
+        path="IFlyAdDownload" />
+</paths>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/com_facebook_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="18dp"
+        android:drawableTop="@drawable/facebook_share"
+        android:paddingTop="18dp"
+        android:text="@string/share_facebook"
+        android:textColor="@color/dark_3_color"
+        android:textSize="10sp" />
+
+    <life.forever.cf.publics.weight.viewtext.MagnetTextView
+        android:id="@+id/com_zalo_share"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:drawablePadding="8dp"
+        android:gravity="center_horizontal"
+        android:paddingBottom="18dp"
+        android:paddingTop="18dp"
+        android:text="@string/share_zalo"
+        android:visibility="gone"
+        android:textColor="@color/dark_3_color"
+        android:textSize="10sp" />
+
+
+
+
+</LinearLayout>

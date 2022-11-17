@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="130dp"
+    android:layout_marginStart="80dp"
+    android:layout_marginEnd="15dp"
+    android:background="@drawable/ns_bg_rank_dialog"
+    android:padding="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_toStartOf="@+id/layout_rank_cancel"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_dialog_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:textColor="@color/color_656667"
+        android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_rank_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:paddingStart="10dp"
+        android:orientation="vertical"
+        tools:ignore="RtlSymmetry">
+
+    <ImageView
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/icon_rank_cancel"
+        tools:ignore="ContentDescription" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shadow"
+        android:layout_marginEnd="5dp">
+
+        <ImageView
+            android:id="@+id/cover"
+            android:layout_width="82dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/default_work_cover"
+            tools:ignore="ContentDescription" />
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/ranking"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/icon_ranking_one"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="12sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:layout_marginEnd="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/book_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text=""
+            android:textColor="@color/discover_name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/book_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text=""
+            android:textColor="@color/color_999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/book_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:text=""
+            android:maxLines="2"
+            android:textColor="@color/color_777777"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:id="@+id/ll_hot"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/img_hot"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/icon_hot_read"
+                tools:ignore="ContentDescription,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/read_num"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/theme_color"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/sort_name"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:background="@drawable/discover_bg"
+                android:gravity="center"
+                android:paddingStart="5dp"
+                android:paddingEnd="5dp"
+                android:text="@string/discover_tamat"
+                android:textColor="#01C5A7"
+                android:textSize="10sp"
+                tools:ignore="HardcodedText,SmallSp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
+

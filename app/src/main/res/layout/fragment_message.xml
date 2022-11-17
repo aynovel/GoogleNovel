@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_customer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/customer_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/icon_customer"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@+id/layout_ctime"
+            android:layout_toEndOf="@+id/customer_img"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/customer_message"
+                android:textColor="@color/color_000001"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_customer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="@color/color_656667"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_ctime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            tools:ignore="RelativeOverlap,UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tv_customer_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tv_customer_num"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_circle"
+                android:gravity="center"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded,SmallSp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_customer"
+        style="@style/common_horizontal_line"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/layout_system"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        tools:ignore="UseCompoundDrawables">
+
+        <ImageView
+            android:id="@+id/system_img"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:src="@drawable/icon_system"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:layout_toStartOf="@+id/layout_stime"
+            android:layout_toEndOf="@+id/system_img"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/system_messages"
+                android:textColor="@color/color_000001"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_system"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:ellipsize="end"
+                android:gravity="center_vertical"
+                android:lines="1"
+                android:textColor="@color/color_656667"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_stime"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:orientation="vertical"
+            tools:ignore="UseCompoundDrawables">
+
+            <TextView
+                android:id="@+id/tv_system_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:paddingTop="3dp"
+                android:textColor="@color/color_999999"
+                android:textSize="12sp"
+                tools:ignore="RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/tv_system_num"
+                android:layout_width="20dp"
+                android:layout_height="12dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/bg_circle"
+                android:gravity="center"
+                android:textColor="@color/color_FFFFFF"
+                android:textSize="8sp"
+                android:visibility="gone"
+                tools:ignore="RtlHardcoded,SmallSp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view_system"
+        style="@style/common_horizontal_line"
+        android:visibility="gone" />
+
+    <include
+        android:id="@+id/noneView"
+        layout="@layout/layout_shelf_is_empty"
+        android:visibility="gone" />
+</LinearLayout>

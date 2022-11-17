@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/selector_list_selector"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_book_update_cb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/book_update"
+            android:textColor="@color/color_1F1F1F"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp">
+
+            <CheckBox
+                android:id="@+id/book_update_cb"
+                android:layout_width="44dp"
+                android:layout_height="34dp"
+                android:background="@drawable/selector_boyi_checkbox"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <View style="@style/common_horizontal_line" />
+
+    <LinearLayout
+        android:id="@+id/ll_auto_lock_cb"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:gravity="center_vertical"
+            android:text="@string/auto_lock"
+            android:textColor="@color/color_1F1F1F"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="16dp">
+
+            <CheckBox
+                android:id="@+id/auto_lock_cb"
+                android:layout_width="44dp"
+                android:layout_height="34dp"
+                android:background="@drawable/selector_boyi_checkbox"
+                android:button="@null"
+                android:clickable="false"
+                android:focusable="false"/>
+
+        </FrameLayout>
+
+    </LinearLayout>
+    <View style="@style/common_horizontal_line" />
+
+
+</LinearLayout>
