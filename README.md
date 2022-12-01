@@ -68,16 +68,8 @@ QMUI Android 支持 API Level 21+。
 ![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204443.jpg)
 
 
-![image](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204428.jpg)
-![image](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204433.jpg)
 
 
- <p align="center">
-  <img src="https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg" width="1080" height="1920" alt="Banner" />
-</p>
- <p align="center">
-  <img src="https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg" width="1080" height="1920" alt="Banner" />
-</p>
 ## 联系我
 1. 邮箱：fybcompany0629@gmail.com （每天都有登陆邮箱的习惯，开发的都懂，邮箱沟通留产品的证据，嘿嘿）
 
