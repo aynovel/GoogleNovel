@@ -12,7 +12,7 @@ google开发文档，google开发者平台的简称叫GMS，华为开发者平�
 
 
 
-[![GoogleNovel Team Name](https://img.shields.io/badge/Team-QMUI-brightgreen.svg?style=flat)](https://github.com/aynovel/GoogleNovel "QMUI Team")
+[![GoogleNovel Team Name](https://img.shields.io/badge/Team-QMUI-brightgreen.svg?style=flat)](https://github.com/aynovel/GoogleNovel "GoogleNovel Team")
 
 
 ## 功能特性
@@ -67,7 +67,8 @@ QMUI Android 支持 API Level 21+。
 ![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/read.jpg)
 
 ![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg)
-
+![image](https://githib.com/aynovel/GoogleNovel/blob/main/read.jpg)
+![image](https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg)
 ## 联系我
 1. 邮箱：fybcompany0629@gmail.com （每天都有登陆邮箱的习惯，开发的都懂，邮箱沟通留产品的证据，嘿嘿）
 
