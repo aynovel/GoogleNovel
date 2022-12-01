@@ -49,6 +49,7 @@ QMUI Android 支持 API Level 21+。
 
 ## 隐私与安全
 1. 框架会调用 android.os.Build 下的字段读取 brand、model 等信息，用于区分不同的设备。
+   
 2. 框架会尝试读取系统设置获取是否是全面屏手势
 
 [comment]: <> (## GoogleNovel Demo APP 安装包下载)
