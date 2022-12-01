@@ -57,19 +57,24 @@ QMUI Android 支持 API Level 21+。
 [comment]: <> (点击链接下载：[http://cdn.qmuiteam.com/download/android/latest]&#40;http://cdn.qmuiteam.com/download/android/latest&#41;)
 
 功能预览：
+![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204405.jpg)
 
-![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/login.jpg)
+![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204428.jpg)
 
-![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/home.jpg)
+![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204433.jpg)
 
-![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/detail.jpg)
+![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204438.jpg)
 
-![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/read.jpg)
+![GoogleNovel Website](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204443.jpg)
 
-![GoogleNovel Website](https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg)
-![image](https://githib.com/aynovel/GoogleNovel/blob/main/read.jpg)
-![image](https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg)
 
+![image](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204428.jpg)
+![image](https://novelclub.oss-us-west-1.aliyuncs.com/upload/img/20221201204433.jpg)
+
+
+ <p align="center">
+  <img src="https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg" width="1080" height="1920" alt="Banner" />
+</p>
  <p align="center">
   <img src="https://githib.com/aynovel/GoogleNovel/blob/main/reads.jpg" width="1080" height="1920" alt="Banner" />
 </p>
