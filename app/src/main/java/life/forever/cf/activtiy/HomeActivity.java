@@ -342,19 +342,10 @@ public class HomeActivity extends BaseFragmentActivity {
         checkBookShelf();
         ShelfUtil.firstRecommend(HomeActivity.this);
         ShelfUtil.workUpdate(HomeActivity.this,false);
-//        Message message = Message.obtain();
-//        message.what = BOOKSHELFTAB;
-//        EventBus.getDefault().post(message);
     }
 
     @OnClick({R.id.ll_discover})
     public void onRadioDiscover() {
-        /*Message messages = new Message();
-        messages.what = DISCOVERREFRESH;
-        Bundle bundle = new Bundle();
-        bundle.putInt("index", index);
-        messages.setData(bundle);
-        EventBus.getDefault().post(messages);*/
         FeaturedFragment.Refresh(index);
         checkDiscover();
     }
@@ -421,33 +412,18 @@ public class HomeActivity extends BaseFragmentActivity {
     public void closeDrawer() {
         drawer.closeDrawers();
     }
-
-    //替换发现图标
     public void DiscoversLogo() {
-//        iv_discover.setImageResource(R.drawable.nav_recommend_checked_plane);
-//        tv_discover.setText(getString(R.string.top));
-//        recardHomeIcon = 1;
     }
 
     public void TheDiscoversLogo() {
-//        iv_discover.setImageResource(R.drawable.nav_recommend_checked);
-//        tv_discover.setText(getString(R.string.home_activity_recommend));
-//        recardHomeIcon = 0;
     }
 
     public void Discover() {
-//        iv_discover.setImageResource(R.drawable.nav_recommend_uncheck);
-//        tv_discover.setText(getString(R.string.home_activity_recommend));
     }
 
-    //AD
     public void LayoutADClick(View view) {
         if (mADData != null && mADData.centerList.rec_list.size() > 0) {
             Intent intent = new Intent();
-            /*
-             * advertise_type: 广告类型 1：作品 2：内部链接 3：外部链接
-             * readflag: 0：作品信息 1：阅读
-             */
             String advertise_type = mBean.advertise_type;
             if ("1".equals(advertise_type)) {
                 String readflag = mBean.advertise_data.readflag;
@@ -504,7 +480,6 @@ public class HomeActivity extends BaseFragmentActivity {
         }
     }
 
-    //用户信息
     public void LayoutUserInfoClick(View view) {
         if (PlotRead.getAppUser().login() && !PlotRead.getAppUser().isVisitor) {
             /*closeDrawer();*/
@@ -515,7 +490,6 @@ public class HomeActivity extends BaseFragmentActivity {
         startActivity(intent);
     }
 
-    //钱包
     public void LayoutWalletClick(View view) {
         if (PlotRead.getAppUser().login() && !PlotRead.getAppUser().isVisitor) {
             intent.setClass(context, WalletActivity.class);
@@ -525,7 +499,7 @@ public class HomeActivity extends BaseFragmentActivity {
         startActivity(intent);
     }
 
-    //充值页
+
     public void LayoutTopUpClick(View view) {
         if (PlotRead.getAppUser().login() && !PlotRead.getAppUser().isVisitor) {
             closeDrawer();
@@ -702,16 +676,10 @@ public class HomeActivity extends BaseFragmentActivity {
         EventBus.getDefault().unregister(this);
     }
 
-    /*
-     * 保存每次退出的时间
-     * @param extiLoginTime
-     */
+
     private void saveExitTime(String extiLoginTime) {
         SharedPreferences.Editor editor = getSharedPreferences("NSLastTime", MODE_PRIVATE).edit();
         editor.putString("NSExitTime", extiLoginTime);
-        //这里用apply()而没有用commit()是因为apply()是异步处理提交，不需要返回结果，而我也没有后续操作
-        //而commit()是同步的，效率相对较低
-        //apply()提交的数据会覆盖之前的,这个需求正是我们需要的结果
         editor.apply();
     }
 
@@ -824,37 +792,37 @@ public class HomeActivity extends BaseFragmentActivity {
      * 获取升级版本信息及系统参数
      */
     private void getVersionUpdate() {
-        NetRequest.versionUpdate(new OkHttpResult() {
-
-            @Override
-            public void onSuccess(JSONObject data) {
-                String serverNo = JSONUtil.getString(data, "ServerNo");
-                if (SN000.equals(serverNo)) {
-                    JSONObject result = JSONUtil.getJSONObject(data, "ResultData");
-                    int status = JSONUtil.getInt(result, "status");
-                    if (status == ONE) {
-                        JSONObject versionInfo = JSONUtil.getJSONObject(result, "version");
-                        String version = JSONUtil.getString(versionInfo, "version");
-                        String link = JSONUtil.getString(versionInfo, "link");
-                        String introduction = JSONUtil.getString(versionInfo, "introduction");
-                        int is_force = JSONUtil.getInt(versionInfo, "is_force");
-                        /*if (needUpdate(version) && PlotRead.getConfig().getBoolean(version, TRUE)) {*/
-                        if (needUpdate(version)) {
-                            if (is_force == ZERO) { // 非强制
-                                NormalUpdateAlertDialog.show(HomeActivity.this, version, introduction, link);
-                            } else {
-                                ForceUpdateAlertDialog.show(HomeActivity.this, version, introduction, link);
-                            }
-                        }
-                    }
-                }
-            }
-
-            @Override
-            public void onFailure(String error) {
-
-            }
-        });
+//        NetRequest.versionUpdate(new OkHttpResult() {
+//
+//            @Override
+//            public void onSuccess(JSONObject data) {
+//                String serverNo = JSONUtil.getString(data, "ServerNo");
+//                if (SN000.equals(serverNo)) {
+//                    JSONObject result = JSONUtil.getJSONObject(data, "ResultData");
+//                    int status = JSONUtil.getInt(result, "status");
+//                    if (status == ONE) {
+//                        JSONObject versionInfo = JSONUtil.getJSONObject(result, "version");
+//                        String version = JSONUtil.getString(versionInfo, "version");
+//                        String link = JSONUtil.getString(versionInfo, "link");
+//                        String introduction = JSONUtil.getString(versionInfo, "introduction");
+//                        int is_force = JSONUtil.getInt(versionInfo, "is_force");
+//                        /*if (needUpdate(version) && PlotRead.getConfig().getBoolean(version, TRUE)) {*/
+//                        if (needUpdate(version)) {
+//                            if (is_force == ZERO) { // 非强制
+//                                NormalUpdateAlertDialog.show(HomeActivity.this, version, introduction, link);
+//                            } else {
+//                                ForceUpdateAlertDialog.show(HomeActivity.this, version, introduction, link);
+//                            }
+//                        }
+//                    }
+//                }
+//            }
+//
+//            @Override
+//            public void onFailure(String error) {
+//
+//            }
+//        });
     }
 
 

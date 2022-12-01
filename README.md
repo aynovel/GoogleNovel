@@ -42,9 +42,15 @@ QMUI Android 支持 API Level 21+。
 1. 框架会调用 android.os.Build 下的字段读取 brand、model 等信息，用于区分不同的设备。
 2. 框架会尝试读取系统设置获取是否是全面屏手势
 
-## GoogleNovel Demo APP 安装包下载
-点击链接下载：[http://cdn.qmuiteam.com/download/android/latest](http://cdn.qmuiteam.com/download/android/latest)
+[comment]: <> (## GoogleNovel Demo APP 安装包下载)
+
+[comment]: <> (点击链接下载：[http://cdn.qmuiteam.com/download/android/latest]&#40;http://cdn.qmuiteam.com/download/android/latest&#41;)
 
 功能预览：
 
 ![GoogleNovel Website](http://qmuiteam.com/themes/qmui/public/style/images/independent/AndroidDownloadQRCode_2x.png)
+
+## 联系我
+1. 邮箱：fybcompany0629@gmail.com （每天都有登陆邮箱的习惯，开发的都懂，邮箱沟通留产品的证据，嘿嘿）
+
+
